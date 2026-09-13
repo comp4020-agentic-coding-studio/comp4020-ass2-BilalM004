@@ -43,6 +43,10 @@ ready to commit.
 - When a page's claim is something a marker could actually check (a weight,
   a pairing, a count), prefer writing that check into `spec/` over leaving it
   as prose alone.
+- Judgment calls that `spec/` can't check mechanically — contradictions,
+  tone drift, policy mismatches, thematic drift — live in the `content-review`
+  skill. Run it before a commit that adds or edits session, assessment,
+  lecture, or policy copy; not on every small edit.
 
 ## What's fixed, not mine to change
 

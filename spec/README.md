@@ -26,6 +26,16 @@ count: select the checks that protect your work's real promises, and test the
 **contracts** — what the page must do, not how you built it — so the tests
 survive a change of approach, or of stack.
 
+So far:
+
+- `assessment-weights.test.ts` — every assessment's weight sums to 100.
+- `schedule-coverage.test.ts` — sessions cover weeks 1–12 exactly once, and
+  Crit Participation names every week exactly once.
+
+Judgment checks these can't cover (contradictions, tone, policy alignment,
+thematic drift) live instead in the `content-review` skill — see the project
+`CLAUDE.md`.
+
 A green suite here is backpressure, not a mark: your tutor verifies what you
 deployed against the published spec at the crit, and keeping your own tests
 green is how you arrive with no surprises.
