@@ -31,6 +31,9 @@ So far:
 - `assessment-weights.test.ts` — every assessment's weight sums to 100.
 - `schedule-coverage.test.ts` — sessions cover weeks 1–12 exactly once, and
   Crit Participation names every week exactly once.
+- `spec-coverage.test.ts` — every Crossing and assessment declares a
+  non-empty `spec`, backing the policies page's claim that nothing is
+  graded against an unwritten rubric.
 
 Judgment checks these can't cover (contradictions, tone, policy alignment,
 thematic drift) live instead in the `content-review` skill — see the project
