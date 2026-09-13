@@ -55,9 +55,8 @@ export const courseMeta = slopCourseMetaSchema.parse({
   endDate: "2026-10-30",
   description:
     "Hallway Economics treats campus as an economy: attention, trust and " +
-    "serendipity are the currency, spent by walking up to strangers, " +
-    "sitting with the discomfort, and making the most of campus time. You " +
-    "don't just report back what happened — you reflect on what the " +
-    "investment actually bought.",
+    "serendipity are the currency, spent by walking up to strangers and " +
+    "making the most of campus time. You don't just report back what " +
+    "happened — you reflect on what the investment bought.",
   tags: ["fieldwork", "campus life", "social capital"],
 }) satisfies CourseMetaInput;

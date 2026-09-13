@@ -17,18 +17,24 @@ Driven by `src/course-config.ts` (course record) and `src/site-config.ts`
 
 ## Current state
 
-Done except imagery: title "Hallway Economics", real description/tags,
-session labels renamed Crossing/Crossings, dates 2026-07-27 to 2026-10-30
-(Semester 2, 2026), `index.astro`'s "What you will do"/"Who it is for"
-copy written.
+Done: title "Hallway Economics", real description/tags, session labels
+renamed Crossing/Crossings, dates 2026-07-27 to 2026-10-30 (Semester 2,
+2026), hero image replaced with real artwork (`hero-home.jpg`),
+`index.astro`'s "What you will do"/"Who it is for" copy written and
+iterated on for accuracy and tone.
 
-Still placeholder: `hero-home.avif`, `card.png`, and both people portraits
-(`idris-fenn.avif`, `marisol-quaye.avif`) — real imagery is being sourced
-separately; `pnpm check:evidence` will flag these four by hash until
-they're replaced (or deliberately deleted).
+Still placeholder: `card.png` (site-wide social preview image) — real
+imagery is being sourced separately; `pnpm check:evidence` will flag it by
+hash until it's replaced (or deliberately deleted). The two people
+portraits are also still flagged but belong to `people.md`, not this
+block.
 
 ## Open questions
 
 None blocking. Assignment brief doesn't mandate real-world dates (only
 "twelve dated teaching weeks"), so 2026-07-27–2026-10-30 is a deliberate
 choice, not a placeholder.
+
+`card.png` left as the starter placeholder for now — deliberately deferred,
+not forgotten. `pnpm check:evidence` will keep flagging it until it's
+replaced or removed.
