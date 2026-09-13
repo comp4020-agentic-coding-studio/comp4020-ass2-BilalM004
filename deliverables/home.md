@@ -17,13 +17,18 @@ Driven by `src/course-config.ts` (course record) and `src/site-config.ts`
 
 ## Current state
 
-All placeholder: title "Course Title Goes Here", description generic, tags
-`["replace me"]`, dates 2027-02-22 to 2027-05-28 (arbitrary), starter
-home/social artwork untouched.
+Done except imagery: title "Hallway Economics", real description/tags,
+session labels renamed Crossing/Crossings, dates 2026-07-27 to 2026-10-30
+(Semester 2, 2026), `index.astro`'s "What you will do"/"Who it is for"
+copy written.
+
+Still placeholder: `hero-home.avif`, `card.png`, and both people portraits
+(`idris-fenn.avif`, `marisol-quaye.avif`) — real imagery is being sourced
+separately; `pnpm check:evidence` will flag these four by hash until
+they're replaced (or deliberately deleted).
 
 ## Open questions
 
-- Exact course title (working name "Hallway Economics" — confirm final).
-- Real teaching-period dates (which semester/year to model).
-- Commission/generate new imagery, or go deliberately image-free (and say so
-  in `PROCESS.md`)?
+None blocking. Assignment brief doesn't mandate real-world dates (only
+"twelve dated teaching weeks"), so 2026-07-27–2026-10-30 is a deliberate
+choice, not a placeholder.
