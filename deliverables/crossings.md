@@ -16,11 +16,12 @@
 | 3 — Presence at Scale        | 5–6   | Set Up Shop                 | Hallway Showcase _(Mid-Semester Presentation)_    |
 | 4 — Risk & Rejection         | 7–8   | Ask Anyway                  | The Rejection Report                              |
 | 5 — Building With Others     | 9–10  | Find a Partner in the Hall  | What We Made                                      |
-| 6 — Legacy                   | 11–12 | Leave Something Behind      | The Hallway Finale _(Final Presentation)_         |
+| 6 — Legacy                   | 11–12 | _(none — presentation only)_ | The Hallway Finale _(Final Presentation)_         |
 
-Each Crossing also produces a 5–10s video clip of the fieldwork. By the
-Legacy Crossing, each student has all six of their own clips, edited
-together into one video.
+Each of the first five Crossings also produces a 5–10s video clip of the
+fieldwork. By the Legacy Crossing, each student has all five of their own
+clips, edited together into one video — Legacy itself has no fieldwork and
+adds no clip.
 
 - Crossing 2 (The Exchange, weeks 3–4): swap something with a stranger — a
   tip, a favour, a small object, a skill, no money — and see what comes
@@ -28,9 +29,9 @@ together into one video.
 - Crossing 3 (Presence at Scale, weeks 5–6): the task itself scales up —
   a bigger stall/event than the earlier solo Crossings — then a showcase
   presentation reporting on it.
-- Crossing 6 (Legacy, weeks 11–12): each student presents individually,
-  walking through their whole semester (what they did, what they learned
-  across all six Crossings), then plays their six-clip video.
+- Crossing 6 (Legacy, weeks 11–12): no fieldwork of its own — each student
+  presents individually, walking through the five Crossings that came
+  before, then plays their five-clip video.
 
 ## Current state
 
