@@ -54,10 +54,10 @@ export const courseMeta = slopCourseMetaSchema.parse({
   startDate: "2026-07-27",
   endDate: "2026-10-30",
   description:
-    "Hallway Economics treats the unscheduled minutes between classes as " +
-    "the scarcest resource on campus. Each week you spend them: starting " +
-    "conversations with strangers, running a pop-up stall, noticing a " +
-    "small opportunity and acting on it — then reporting back to the " +
-    "group what happened.",
+    "Hallway Economics treats campus as an economy: attention, trust and " +
+    "serendipity are the currency, spent by walking up to strangers, " +
+    "sitting with the discomfort, and making the most of campus time. You " +
+    "don't just report back what happened — you reflect on what the " +
+    "investment actually bought.",
   tags: ["fieldwork", "campus life", "social capital"],
 }) satisfies CourseMetaInput;
