@@ -1,5 +1,11 @@
 # Lectures page — `src/pages/lectures/`, `src/content/lectures/*.md`, `src/decks/*.deck.mdx`
 
+## Voice
+
+Per `VOICE.md`: explains motive, objective and outcomes, not just what was
+covered. The linked slides pair sourced, practical information with
+personality of their own — not a bare bullet outline.
+
 ## Needs to satisfy
 
 - At least one lecture carries a real deck, linked from its page. Not one per

@@ -3,6 +3,11 @@
 Driven by `src/course-config.ts` (course record) and `src/site-config.ts`
 (nav, labels, artwork), so both live in this block.
 
+## Voice
+
+Per `VOICE.md`: pitch — sells the semester. The one place personality is
+front and center.
+
 ## Needs to satisfy
 
 - SLOP code keeps its assigned digits: `SLOP1744`, level 1.

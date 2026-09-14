@@ -32,6 +32,9 @@ Never ship a placeholder: no lorem ipsum, no "TBD", no page that exists only
 to satisfy a schema. If a page isn't ready to say something real, it isn't
 ready to commit.
 
+That default register shifts by page type — home, sessions, assessments,
+lectures, people and policies each have their own note. See `VOICE.md`.
+
 ## Working rules
 
 - Every fact about the course (dates, weights, code, session label) has one

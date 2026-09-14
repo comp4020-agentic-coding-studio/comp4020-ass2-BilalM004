@@ -1,5 +1,12 @@
 # Assessments page — `src/pages/assessments/`, `src/content/assessments/*.md`
 
+## Voice
+
+Per `VOICE.md`: contract register — precise, deadpan, "here's the brief,
+here's what's checked." Only turns reflective where it's describing what a
+student's own reflection sounds like; the page itself stays a contract, not
+a reflection.
+
 ## Needs to satisfy
 
 - Weights sum to exactly 100 (`assessment-weights.test.ts`).

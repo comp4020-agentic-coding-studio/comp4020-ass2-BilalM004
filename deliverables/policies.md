@@ -1,5 +1,10 @@
 # Policies — `src/pages/policies/index.mdx`
 
+## Voice
+
+Per `VOICE.md`: the driest page on the site, deliberately — plain rules
+language, no jokes, no color. Students need to trust this one literally.
+
 ## Needs to satisfy
 
 - Course-wide rules: late work, extensions, academic integrity, getting
