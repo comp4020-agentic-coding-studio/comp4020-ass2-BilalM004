@@ -35,9 +35,12 @@ fieldwork brief and the report, not how Legacy grades it.
 - Crossing 2 (The Exchange, weeks 3–4): swap something with a stranger — a
   tip, a favour, a small object, a skill, no money — and see what comes
   back.
-- Crossing 3 (Presence at Scale, weeks 5–6): the task itself scales up —
-  a bigger stall/event than the earlier solo Crossings — then a showcase
-  presentation reporting on it.
+- Crossing 3 (Presence at Scale, weeks 5–6): run by a team assigned for
+  the Crossing (not self-organised, not spontaneous) — the task itself
+  scales up to a bigger stall/event than the earlier solo Crossings, then
+  a showcase presentation where the team reports on it as one account.
+  The Midsemester Checkpoint mark judges the stall as a whole, not each
+  teammate's individual slice of it.
 - Crossing 4 (Risk & Rejection, weeks 7–8): ask a stranger to join you on a
   mini quest — something spontaneous, decided on the spot. The risk is
   built into the ask itself (a real invitation can get a real no); there's
@@ -89,14 +92,39 @@ spec/teaching-team/related blocks.
 
 ## Current state
 
-2 of 12 exist, both `STARTER_CONTENT` placeholders
-(`01-getting-started.md`, `02-first-review.md`) — need rewriting to match
-the arc above (one entry per week, two weeks per Crossing).
+All 12 written, one file per week, named `NN-task-name.md` (e.g.
+`01-say-something.md`) — the displayed title matches the arc's Out/Back
+beat name per Crossing, never "Week N". `pnpm check` green.
+
+Teacher per week comes straight from each tutor's `affiliation` in
+`src/content/people/*.md`: Haskell Byte (1–2), Yu Tobe (3–4), George
+Curious (5–6 and, as convenor, 11–12), Dora De Exploré (7–8), Moana Liza
+(9–10).
+
+Weeks 11–12 (Crossing 6, no fieldwork) split into a Dry Run (11) —
+rehearsing the five-Crossing account and video cut in front of the group —
+and the Hallway Finale itself (12), the marked presentation.
+
+Writing these also surfaced two pre-existing breaks fixed in passing:
+`lectures/week-01.md` and `week-02.md` still referenced the deleted
+placeholder people (`marisol-quaye`, `idris-fenn`) and the old session
+slugs, and still carried a placeholder `date:` outside the teaching
+period — all now point at real people/slugs and real dates. The lecture
+bodies themselves are still `STARTER_CONTENT`; that stays `lectures.md`'s
+job.
+
+`content-review` also caught a real policy-mismatch: `policies.md`'s
+"team" fallback language was attached to Crossing 5 when it actually
+described Crossing 3. Corrected on both sides: Crossing 5 keeps the
+no-standing-partner fallback (contact us beforehand); the team fallback
+(talk to your team) moved to Crossing 3, matching the team-assigned design
+above. `05-set-up-shop.md`, `06-hallway-showcase.md` and
+`midsem-checkpoint.md` were all updated to say the stall is run by an
+assigned team and marked as one account, not five individual slices of it.
 
 ## Open questions
 
-- Exact `spec:`-checkable line per Crossing — now unblocked (all six have a
-  real brief), to draft per-file when writing the 12 real sessions rather
-  than in this tracker.
-- Teacher assignment across all 12 weeks (only Marisol Quaye and Idris Fenn
-  exist) and the file-naming convention for the 12 real session files.
+None outstanding — teacher assignment and file naming (above) are both
+resolved. The partner-finding-stays-spontaneous flag from the arc below is
+resolved too: it's the intended design, and `policies.md` now agrees with
+it.

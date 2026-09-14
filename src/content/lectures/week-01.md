@@ -4,12 +4,12 @@ description:
   The first lecture — what the course is, why it is shaped this way, and what
   happens in week 1
 week: 1
-date: 2027-02-22
+date: 2026-07-27
 teachers:
-  - marisol-quaye
+  - george-curious
 slides: /decks/week-01/
 related:
-  - sessions/01-getting-started
+  - sessions/01-say-something
 ---
 
 <!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->

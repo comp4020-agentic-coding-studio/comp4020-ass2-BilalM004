@@ -3,11 +3,11 @@ title: Second lecture
 description:
   Week 2 — the first substantive material, and the run-up to the first review
 week: 2
-date: 2027-03-01
+date: 2026-08-03
 teachers:
-  - idris-fenn
+  - haskell-byte
 related:
-  - sessions/02-first-review
+  - sessions/02-how-it-landed
   - assessments/crit-participation
 ---
 
