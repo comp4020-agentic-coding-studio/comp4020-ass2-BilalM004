@@ -9,6 +9,15 @@ export const sessionLabels = {
   plural: "Crossings",
 } as const;
 
+// Each Crossing runs two weeks (hallway week, then report week), six
+// Crossings across the twelve-week semester. Assessment weeks derive their
+// Crossing number from this instead of restating it.
+const WEEKS_PER_CROSSING = 2;
+
+export function crossingNumber(week: number): number {
+  return Math.ceil(week / WEEKS_PER_CROSSING);
+}
+
 export const graphCollections = ["sessions", "assessments", "lectures", "people"];
 
 export const courseApiCollections = [

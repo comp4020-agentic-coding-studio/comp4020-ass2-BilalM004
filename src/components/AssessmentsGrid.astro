@@ -3,9 +3,16 @@ import { getPublishedCollection } from "astro-course-university/content";
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import { formatCourseDate } from "../lib/dates";
+import { crossingNumber, sessionLabels } from "../site-config";
 
 const assessments = await getPublishedCollection("assessments");
 const visible = assessments.sort((a, b) => a.data.week - b.data.week);
+
+// Marked holistically means it's judged at one specific Crossing (the
+// Showcase, the Finale) rather than across every week like the weighted
+// participation grade — that's when a single Crossing number applies.
+const isSingleCrossing = (assessment: (typeof visible)[number]) =>
+  assessment.data.marking?.mode === "holistic";
 ---
 
 <CardGrid columns={2}>
@@ -16,6 +23,11 @@ const visible = assessments.sort((a, b) => a.data.week - b.data.week);
         {assessment.data.weight != null && (
           <p>
             <small>
+              {isSingleCrossing(assessment) && (
+                <>
+                  {sessionLabels.singular} {crossingNumber(assessment.data.week)} ·{" "}
+                </>
+              )}
               Due {formatCourseDate(assessment.data.due)} · Weight: {assessment.data.weight}%{assessment.data.draft && " · Draft"}
             </small>
           </p>

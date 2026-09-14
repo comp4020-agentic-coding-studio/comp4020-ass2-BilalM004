@@ -7,7 +7,7 @@ import Callout from "astro-theme-university/components/Callout.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import MarkingModel from "../../components/MarkingModel.astro";
 import { formatCourseDate } from "../../lib/dates";
-import { graphCollections, siteConfig } from "../../site-config";
+import { crossingNumber, graphCollections, sessionLabels, siteConfig } from "../../site-config";
 
 export async function getStaticPaths() {
   const assessments = await getPublishedCollection("assessments");
@@ -35,7 +35,14 @@ const { Content } = await render(assessment);
       </Callout>
     )
   }
-  <p><strong>Due:</strong> {formatCourseDate(assessment.data.due)} · <strong>Weight:</strong> {assessment.data.weight}%</p>
+  <p>
+    {assessment.data.marking?.mode === "holistic" && (
+      <>
+        <strong>{sessionLabels.singular}:</strong> {crossingNumber(assessment.data.week)} ·{" "}
+      </>
+    )}
+    <strong>Due:</strong> {formatCourseDate(assessment.data.due)} · <strong>Weight:</strong> {assessment.data.weight}%
+  </p>
   <Content />
   <SpecList spec={assessment.data.spec}>
     The brief poses the problem and leaves room for a response. The spec is the
