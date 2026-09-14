@@ -25,9 +25,10 @@ people who watched you spend it.
 ## In the room
 
 Each student presents their five Crossings in turn, then plays their
-five-clip video in full. The dry run already found the soft spots; this is
-the version that counts, ambitions and misfires both — the Crossing that
-fell flat belongs in the account as much as the one that worked.
+five-clip video in full. The Discussion Lab already surfaced the soft
+spots through peer conversation; this is the version that counts, ambitions
+and misfires both — the Crossing that fell flat belongs in the account as
+much as the one that worked.
 
 ## What leaves the room
 

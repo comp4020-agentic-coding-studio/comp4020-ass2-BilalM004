@@ -101,9 +101,10 @@ Teacher per week comes straight from each tutor's `affiliation` in
 Curious (5–6 and, as convenor, 11–12), Dora De Exploré (7–8), Moana Liza
 (9–10).
 
-Weeks 11–12 (Crossing 6, no fieldwork) split into a Dry Run (11) —
-rehearsing the five-Crossing account and video cut in front of the group —
-and the Hallway Finale itself (12), the marked presentation.
+Weeks 11–12 (Crossing 6, no fieldwork) split into a Discussion Lab (11) —
+talking through the five-Crossing account with peers in small groups, no
+stage or run-through — and the Hallway Finale itself (12), the marked
+presentation.
 
 Writing these also surfaced two pre-existing breaks fixed in passing:
 `lectures/week-01.md` and `week-02.md` still referenced the deleted
