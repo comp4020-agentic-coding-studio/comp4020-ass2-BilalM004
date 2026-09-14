@@ -9,6 +9,11 @@ email: moana.liza@slop.university
 contact:
   Wed 3-4pm · the Maker Space · email ahead so she can clear a bench ·
   Crossing 5 questions first, then George Curious
+photo: ./moana-liza.avif
+photoAlt:
+  A halftone-shaded illustrated portrait of a woman resting her chin on
+  her hand, wearing a paint-splattered apron, in gold and black on a
+  cream background.
 ---
 
 Moana talks in materials before she talks in ideas --- what's lying

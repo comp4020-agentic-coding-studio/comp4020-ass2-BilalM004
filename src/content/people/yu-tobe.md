@@ -9,6 +9,10 @@ email: yu.tobe@slop.university
 contact:
   Thu 1-2pm · wherever the light's good that day · informal drop-in, call
   or email · Crossing 2 questions first, then George Curious
+photo: ./yu-tobe.avif
+photoAlt:
+  A halftone-shaded illustrated portrait of a smiling woman with a lapel
+  microphone, in a light blazer, in gold and black on a cream background.
 ---
 
 Yu has spent enough years behind a camera to know nobody watches a video

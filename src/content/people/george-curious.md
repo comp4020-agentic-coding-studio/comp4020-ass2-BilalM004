@@ -10,6 +10,11 @@ email: george.curious@slop.university
 contact:
   Fri 1-2pm · office, by appointment · email ahead · course-wide matters
   and both presentations, otherwise ask your Crossing's tutor first
+photo: ./george-curious.avif
+photoAlt:
+  A halftone-shaded illustrated portrait of an older bearded man in
+  glasses, resting his chin on his hand, in gold and black on a cream
+  background.
 ---
 
 Ask George a question and you'll, more often than not, get a better

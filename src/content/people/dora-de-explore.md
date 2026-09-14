@@ -9,6 +9,11 @@ email: dora.deexplore@slop.university
 contact:
   Mon 11am-12pm · the courtyard, weather permitting · call or email ·
   Crossing 4 questions first, then George Curious
+photo: ./dora-de-explore.avif
+photoAlt:
+  A halftone-shaded illustrated portrait of a woman in a canvas field
+  vest with a compass badge, facing the viewer, in gold and black on a
+  cream background.
 ---
 
 Dora has asked strangers for things in more languages than she's fluent

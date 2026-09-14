@@ -9,6 +9,10 @@ email: haskell.byte@slop.university
 contact:
   Tue 2-3pm · CS building · 15-min slots, book by email · Crossing 1
   questions first, then George Curious
+photo: ./haskell-byte.avif
+photoAlt:
+  A halftone-shaded illustrated portrait of a man in glasses and a tweed
+  jacket, facing the viewer, in gold and black on a cream background.
 ---
 
 Haskell spent most of undergrad talking to compilers, which are patient and
