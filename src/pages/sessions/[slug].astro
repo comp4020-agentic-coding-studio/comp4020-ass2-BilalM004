@@ -4,9 +4,10 @@ import { getPublishedCollection } from "astro-course-university/content";
 import RelatedContent from "astro-course-university/components/RelatedContent.astro";
 import SpecList from "astro-course-university/components/SpecList.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import CrossingBadge from "../../components/CrossingBadge.astro";
 import TeachingTeam from "../../components/TeachingTeam.astro";
 import { formatCourseDate } from "../../lib/dates";
-import { crossingNumber, graphCollections, sessionLabels, siteConfig } from "../../site-config";
+import { crossingNumber, graphCollections, siteConfig } from "../../site-config";
 
 export async function getStaticPaths() {
   const sessions = await getPublishedCollection("sessions");
@@ -28,9 +29,9 @@ const { Content } = await render(session);
     been met without asking you.
   </SpecList>
   <p>
+    <CrossingBadge number={crossingNumber(session.data.week)} />{" "}
     <small>
-      {sessionLabels.singular} {crossingNumber(session.data.week)} · Week{" "}
-      {session.data.week} · {formatCourseDate(session.data.date)}
+      · Week {session.data.week} · {formatCourseDate(session.data.date)}
     </small>
   </p>
   <TeachingTeam teachers={session.data.teachers} />

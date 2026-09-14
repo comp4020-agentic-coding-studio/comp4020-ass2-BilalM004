@@ -1,0 +1,25 @@
+---
+import { sessionLabels } from "../site-config";
+
+export interface Props {
+  number: number;
+}
+
+const { number } = Astro.props;
+---
+
+<span class="crossing-badge">{sessionLabels.singular} {number}</span>
+
+<style>
+  .crossing-badge {
+    display: inline-block;
+    background: var(--at-primary);
+    color: var(--at-on-primary);
+    font-weight: 600;
+    font-size: var(--at-font-size-xs);
+    line-height: 1.4;
+    padding: 0.0625rem 0.5rem;
+    border-radius: var(--at-border-radius);
+    letter-spacing: 0.02em;
+  }
+</style>

@@ -2,8 +2,9 @@
 import { getPublishedCollection } from "astro-course-university/content";
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
+import CrossingBadge from "./CrossingBadge.astro";
 import { formatCourseDate } from "../lib/dates";
-import { crossingNumber, sessionLabels } from "../site-config";
+import { crossingNumber } from "../site-config";
 
 const assessments = await getPublishedCollection("assessments");
 const visible = assessments.sort((a, b) => a.data.week - b.data.week);
@@ -22,12 +23,13 @@ const isSingleCrossing = (assessment: (typeof visible)[number]) =>
         {assessment.data.description && <p>{assessment.data.description}</p>}
         {assessment.data.weight != null && (
           <p>
+            {isSingleCrossing(assessment) && (
+              <>
+                <CrossingBadge number={crossingNumber(assessment.data.week)} />{" "}
+              </>
+            )}
             <small>
-              {isSingleCrossing(assessment) && (
-                <>
-                  {sessionLabels.singular} {crossingNumber(assessment.data.week)} ·{" "}
-                </>
-              )}
+              {isSingleCrossing(assessment) && "· "}
               Due {formatCourseDate(assessment.data.due)} · Weight: {assessment.data.weight}%{assessment.data.draft && " · Draft"}
             </small>
           </p>
@@ -36,3 +38,15 @@ const isSingleCrossing = (assessment: (typeof visible)[number]) =>
     ))
   }
 </CardGrid>
+
+<style>
+  :global(.at-card-grid:has(.crossing-badge) .at-card-body) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  :global(.at-card-grid:has(.crossing-badge) .at-card-body > p:last-child) {
+    margin-block-start: auto;
+  }
+</style>

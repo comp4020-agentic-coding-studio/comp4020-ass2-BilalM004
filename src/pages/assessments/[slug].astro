@@ -5,9 +5,10 @@ import RelatedContent from "astro-course-university/components/RelatedContent.as
 import SpecList from "astro-course-university/components/SpecList.astro";
 import Callout from "astro-theme-university/components/Callout.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import CrossingBadge from "../../components/CrossingBadge.astro";
 import MarkingModel from "../../components/MarkingModel.astro";
 import { formatCourseDate } from "../../lib/dates";
-import { crossingNumber, graphCollections, sessionLabels, siteConfig } from "../../site-config";
+import { crossingNumber, graphCollections, siteConfig } from "../../site-config";
 
 export async function getStaticPaths() {
   const assessments = await getPublishedCollection("assessments");
@@ -38,7 +39,7 @@ const { Content } = await render(assessment);
   <p>
     {assessment.data.marking?.mode === "holistic" && (
       <>
-        <strong>{sessionLabels.singular}:</strong> {crossingNumber(assessment.data.week)} ·{" "}
+        <CrossingBadge number={crossingNumber(assessment.data.week)} /> ·{" "}
       </>
     )}
     <strong>Due:</strong> {formatCourseDate(assessment.data.due)} · <strong>Weight:</strong> {assessment.data.weight}%
