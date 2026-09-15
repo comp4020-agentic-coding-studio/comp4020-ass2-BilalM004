@@ -22,33 +22,38 @@ related:
   - assessments/crit-participation
 ---
 
-The first hour of the semester has two jobs that don't sound much like each
-other, so it has two presenters. George Curious opens with what you've
-actually enrolled in: how a Crossing works, who teaches it, what's marked,
-and the two rules. Haskell Byte takes the second half and gets practical —
-how to walk up to someone you've never met, and what you owe the room
-afterwards.
+Half and half, like every lecture: George Curious on what you've actually
+enrolled in, Haskell Byte on how to walk up to someone you've never met.
 
-## Why it's shaped this way
+## George's half — what you've signed up for
 
-There's one finding this course is more or less built on. Epley and
+The idea first, because the rest only makes sense downstream of it. Campus
+behaves like an economy: attention, trust and serendipity are finite,
+unevenly held, and worth nothing at all if you never spend any. Twelve
+weeks of spending them deliberately, on people you don't know, is the
+course.
+
+Then the practical frame — how a Crossing works across its two weeks, who
+teaches which one, what each piece is worth, and the two rules that catch
+people out. All of it is on this site already; the lecture is where you
+find out it exists.
+
+## Haskell's half — how to actually do it
+
+It opens on the finding this course is more or less built on. Epley and
 Schroeder put commuters into three groups — talk to a stranger, sit in
 solitude, ride as normal — and asked them to predict which would make for
 the better journey. They picked solitude, and they were wrong: the group
 told to talk to a stranger reported the best commute of the three, across
-nine experiments.
+nine experiments. The gap between what people expect a conversation with a
+stranger to cost and what it actually returns is what the whole semester
+spends against.
 
-The gap between what people expect a conversation with a stranger to cost
-and what it actually returns is what this whole semester spends against.
-You can be told about that gap or you can go and stand in it. The lecture
-tells you; [Say Something](/sessions/01-say-something/) makes you go.
-
-## What the second half gives you
-
-Haskell's half treats "I don't know how to start a conversation" as a
-solvable problem rather than a personality: a reason to be standing there,
-an opener that survives contact, and an exit that doesn't slam the door.
-Three parts, all learnable, none of them natural to anyone the first time.
+From there it's practical. Haskell treats "I don't know how to start a
+conversation" as a solvable problem rather than a personality: a reason to
+be standing there, an opener that survives contact, and an exit that
+doesn't slam the door. Three parts, all learnable, none of them natural to
+anyone the first time.
 
 Then the part most people underestimate — the telling. Crossing 1 isn't
 finished when the conversation ends. The week after, you stand up and

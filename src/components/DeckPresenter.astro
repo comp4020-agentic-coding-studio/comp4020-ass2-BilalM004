@@ -1,0 +1,22 @@
+---
+// Who is speaking, on every content slide. Every lecture in this course is
+// split half and half between the convenor and the Crossing's tutor, and a
+// deck that only says so on the title slide doesn't say so at all — you
+// can't see the title slide from slide fourteen.
+//
+// Markup only: the styling lives in src/decks/theme.css with the rest of the
+// deck's rules, so it can position itself against the slide rather than
+// fighting Astro's scoped-style boundary.
+import { getEntry } from "astro:content";
+
+interface Props {
+  /** A people-collection id, e.g. "george-curious". */
+  of: string;
+}
+
+const { of } = Astro.props;
+const person = await getEntry("people", of);
+if (!person) throw new Error(`DeckPresenter: no person "${of}"`);
+---
+
+<p class="deck-presenter">{person.data.title}</p>

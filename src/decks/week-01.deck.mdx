@@ -1,55 +1,68 @@
 ---
 title: Week 1 — Starting a Conversation
 description:
-  The opening lecture — what the course is, and how to walk up to someone
-  you've never met
+  The opening lecture — what the course is for, and how to walk up to
+  someone you've never met
 ---
 
 import { courseMeta } from "../course-config";
 import DeckPeople from "../components/DeckPeople.astro";
 import DeckAssessments from "../components/DeckAssessments.astro";
+import DeckPresenter from "../components/DeckPresenter.astro";
 
-{/* _class: impact */}
+{/* _class: title */}
 
-# Say something, or headphones in?
+## {courseMeta.code} · Week 1
 
-You're on the bus. There's a stranger next to you. Forty minutes to go.
+# Starting a Conversation
+
+<div class="presenters">
+  <p><strong>George Curious</strong> — what you've signed up for</p>
+  <p><strong>Haskell Byte</strong> — how to actually do it</p>
+</div>
 
 ```notes
-Don't answer it. Show of hands, then move on — the next slide is the answer
-and it lands better if they've committed to a guess first.
-
-Almost every room votes headphones.
-```
-
-```comment
-Wants a full-bleed background (a bus or train seat beside a stranger) and
-`_class: hero` instead of `impact` once the artwork exists. Reads fine as a
-flat gold slide until then.
+Every lecture this semester runs half and half: the convenor takes the idea
+and what it's for, the Crossing's tutor takes the practical half. Say that
+once, here, so the handover in the middle isn't a surprise.
 ```
 
 ---
 
-## Nearly everyone gets this wrong
+{/* _class: impact divider */}
 
-Epley and Schroeder, 2014: commuters split three ways — **talk to a
-stranger**, sit in solitude, or ride as normal.
+## George Curious
 
-Riders predicted the conversation would be the worst of the three.
+What you've signed up for
 
-It was the best of the three.
+---
 
-Nine experiments. Trains and buses. Same answer every time.
+## Campus is an economy
+
+Not a metaphor you have to like — just the one this course runs on.
+
+Attention, trust and serendipity behave like currency: finite, unevenly
+distributed, worth more to some people than others, and completely wasted
+if you never spend any.
+
+<DeckPresenter of="george-curious" />
 
 ```notes
-If someone asks how much better: don't invent a number. The press release
-gives no effect sizes. "Significantly more positive than solitude, and the
-best of all three conditions" is as far as the source goes.
-
-The interesting half isn't that it's nice to talk to people. It's that
-people are reliably wrong about it beforehand — which is the whole reason
-this course makes you do it rather than telling you about it.
+Resist explaining the metaphor too hard. It earns itself over twelve weeks;
+right now it only has to be plausible enough to follow.
 ```
+
+---
+
+## So the coursework is spending it
+
+Twelve weeks of deliberately spending attention on people you don't know,
+and finding out what it buys.
+
+That's the whole goal. Not networking, not confidence as a personality
+upgrade — an actual record of what you spent and what came back.
+
+<DeckPresenter of="george-curious" />
 
 ---
 
@@ -58,6 +71,8 @@ this course makes you do it rather than telling you about it.
 # {courseMeta.title}
 
 <p class="lede">{courseMeta.description}</p>
+
+<DeckPresenter of="george-curious" />
 
 ---
 
@@ -68,6 +83,8 @@ semester — and five clips that prove each one happened.
 
 The clips become one video. You play it in week 12, and it either backs up
 what you're claiming or it doesn't.
+
+<DeckPresenter of="george-curious" />
 
 ```notes
 The video is the only artefact that leaves the semester. Everything else is
@@ -85,9 +102,11 @@ spoken, in the room, once.
 Both halves are the Crossing. Five of them run like that. The sixth is
 where you account for the other five — all [six Crossings](/sessions/).
 
+<DeckPresenter of="george-curious" />
+
 ```notes
-Plant this now. It comes back at the end of the lecture as the thing most
-people get wrong in week 2.
+Plant this now. Haskell comes back to it at the end of the lecture as the
+thing most people get wrong in week 2.
 ```
 
 ---
@@ -99,9 +118,11 @@ people get wrong in week 2.
 Consultation times, contact details, and who to ask first are on
 [the People page](/people/).
 
+<DeckPresenter of="george-curious" />
+
 ```notes
-Ask your Crossing's tutor before you ask George. George will ask why you
-haven't.
+Every lecture is me and that Crossing's tutor, half each. Ask your tutor
+before you ask me. I will ask why you haven't.
 ```
 
 ---
@@ -111,6 +132,8 @@ haven't.
 <DeckAssessments />
 
 Full briefs on [Assessment](/assessments/).
+
+<DeckPresenter of="george-curious" />
 
 ```notes
 These render live from the assessment pages, so if a weight looks wrong on
@@ -129,8 +152,10 @@ course is made in the room, on the day.
 **Your reflections are yours.** No AI tool drafts them, rewrites them, or
 generates any part of them.
 
-[Policies](/policies/) has the rest. It's short, and it's the one page on
-this site with no jokes in it.
+[Policies](/policies/) has the rest — including what to do if you want
+another person in one of your clips.
+
+<DeckPresenter of="george-curious" />
 
 ```notes
 Flat delivery. Don't soften either of these — the second one especially.
@@ -140,15 +165,62 @@ leave no grey.
 
 ---
 
-{/* _class: impact */}
+{/* _class: impact divider */}
 
-That's the economy.
+## Haskell Byte
 
-Haskell is going to tell you how to spend in it.
+How to actually do it
 
 ```notes
-Hand over here. Change of presenter, change of register — the next half is
-practical, not administrative.
+Handover. Change of presenter, change of register — the rest is practical,
+not administrative.
+```
+
+---
+
+{/* _class: impact */}
+
+# Say something, or headphones in?
+
+You're on the bus. There's a stranger next to you. Forty minutes to go.
+
+<DeckPresenter of="haskell-byte" />
+
+```notes
+Don't answer it. Show of hands, then move on — the next slide is the answer,
+and it lands better if they've committed to a guess first.
+
+Almost every room votes headphones.
+```
+
+```comment
+Wants a full-bleed background (a bus or train seat beside a stranger) and
+`_class: hero` instead of `impact` once the artwork exists.
+```
+
+---
+
+## Nearly everyone gets this wrong
+
+Epley and Schroeder, 2014: commuters split three ways — **talk to a
+stranger**, sit in solitude, or ride as normal.
+
+Riders predicted the conversation would be the worst of the three.
+
+It was the best of the three.
+
+Nine experiments. Trains and buses. Same answer every time.
+
+<DeckPresenter of="haskell-byte" />
+
+```notes
+If someone asks how much better: don't invent a number. The press release
+gives no effect sizes. "Significantly more positive than solitude, and the
+best of all three conditions" is as far as the source goes.
+
+The interesting half isn't that it's nice to talk to people. It's that
+people are reliably wrong about it beforehand — which is why this course
+makes you do it instead of telling you about it.
 ```
 
 ---
@@ -157,24 +229,16 @@ practical, not administrative.
 
 # Talking to strangers is a protocol, not a trait.
 
-```notes
-This is the claim the rest of the lecture defends. Say it, pause, don't
-explain it yet.
-```
+You're not bad at this. You're running a bad forecast — and a forecast is
+fixable.
 
----
-
-## You're not bad at this. You're running a bad forecast.
-
-Slide two again, but about you: what people get wrong isn't the
-conversation. It's the prediction about the conversation.
-
-James Clear's version — you don't rise to the level of your goals, you fall
-to the level of your systems.
-
-"Be more outgoing" is a goal. What follows is a system.
+<DeckPresenter of="haskell-byte" />
 
 ```notes
+The claim the rest of the lecture defends. James Clear's version if they
+want one: you don't rise to the level of your goals, you fall to the level
+of your systems. "Be more outgoing" is a goal. What follows is a system.
+
 I did not find any of this natural. I took it apart until it worked, which
 is the only qualification I have for teaching it.
 ```
@@ -192,6 +256,8 @@ The person at the same library table every week. Whoever's ahead of you at
 the coffee cart with nothing to do but wait. The reason can be small. It
 has to be real.
 
+<DeckPresenter of="haskell-byte" />
+
 ---
 
 ## Part 2 — Opener
@@ -203,6 +269,8 @@ expecting you, and it has to leave them somewhere to go.
 
 Ask about the thing in front of both of you. It's there, it's shared, and
 it's evidence you were paying attention.
+
+<DeckPresenter of="haskell-byte" />
 
 ```notes
 "So, what do you do" fails both tests — it's an interview question, and the
@@ -221,6 +289,8 @@ Name the thing you're leaving for. Say what you got out of it. Go.
 An exit that doesn't slam the door is what makes a second conversation
 possible.
 
+<DeckPresenter of="haskell-byte" />
+
 ---
 
 {/* _class: quote */}
@@ -230,10 +300,13 @@ possible.
 >
 > <cite>[Say Something](/sessions/01-say-something/)</cite>
 
+<DeckPresenter of="haskell-byte" />
+
 ```comment
-Candidate for a full-bleed background: `src/assets/images/hero-home-themed.jpg`
-copied to `./assets/`, since deck image paths must be deck-relative. Works
-as a plain quote slide without it.
+Candidate for a full-bleed background: `src/assets/images/home-hero-slopuni.jpg`
+(spare, on-palette) copied to `./assets/`, since deck image paths must be
+deck-relative. Caveat: it's a near-twin of the home page's current hero, so
+it may read as a repeat. Works as a plain quote slide without any image.
 ```
 
 ---
@@ -244,9 +317,11 @@ as a plain quote slide without it.
 
 You did it. Nobody heard about it. That's half.
 
+<DeckPresenter of="haskell-byte" />
+
 ```notes
-The pivot. Everything up to here was about walking over. The rest is about
-what you owe the room afterwards — and it's where most of the mark is.
+The pivot. Everything up to here was about walking over. The rest is what
+you owe the room afterwards — and it's where most of the mark is.
 ```
 
 ---
@@ -260,6 +335,8 @@ whether it was worth the walk over.
 The room is listening for the version you'd have given five minutes after
 it happened — hesitations included. A report that's clearly been tidied up
 since Monday reads as exactly that.
+
+<DeckPresenter of="haskell-byte" />
 
 ```notes
 Rehearsed is the most common failure, not shyness. People polish it because
@@ -277,6 +354,8 @@ That isn't a stress test bolted onto the report. It's the other half of it,
 and it's marked as its own criterion — see
 [Crossing Participation](/assessments/crit-participation/).
 
+<DeckPresenter of="haskell-byte" />
+
 ---
 
 {/* _class: quote */}
@@ -285,6 +364,8 @@ and it's marked as its own criterion — see
 >
 > <cite>Yes Theory — a channel built almost entirely out of asking strangers
 > for things</cite>
+
+<DeckPresenter of="haskell-byte" />
 
 ---
 
@@ -299,6 +380,8 @@ and it's marked as its own criterion — see
 [Say Something →](/sessions/01-say-something/)
 
 ![qr](https://courses.slop.university/SLOP1744/sessions/01-say-something/)
+
+<DeckPresenter of="haskell-byte" />
 
 ```notes
 Don't let them leave thinking step 3 is optional. Step 1 without step 3 is

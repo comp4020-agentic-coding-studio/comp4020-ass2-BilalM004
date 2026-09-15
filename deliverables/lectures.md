@@ -44,164 +44,112 @@ They form a series, not two standalone talks: week 1 teaches the walk-up and
 the report-back; week 3 teaches the report-back **as craft**, and closes by
 sending students back to look at the clip they already shot in Crossing 1.
 
+## The co-teaching rule
+
+**Every lecture is 50/50: the convenor and that Crossing's tutor.** George
+Curious takes the first half — the idea, and why the Crossing is worth a
+student's time. The Crossing's own tutor takes the second — how you actually
+go and do it, and what you owe the room afterwards. Stated once on
+`lectures/index.mdx`, so no lecture page has to restate it.
+
+Made visible three ways, because a title slide can't be seen from slide
+fourteen:
+
+1. A **title slide** opening each deck, naming both presenters and their
+   halves.
+2. An **`impact divider` slide** at each handover — the presenter's name at
+   heading size, their half's title under it.
+3. A **persistent presenter tag** on every content slide, bottom left, via
+   `DeckPresenter.astro` — which reads the name from the people collection
+   rather than hardcoding it, and is hidden by CSS on title and divider
+   slides where the name is already the subject.
+
+`_class` passes its whole string through as the slide's class attribute
+(unlike `_id`, which takes only the first token), so `_class: impact divider`
+gives a slide both classes. That is what makes the divider treatment layer on
+top of the brand fill.
+
 ## Lecture 1 — Week 1: Starting a Conversation
 
-`src/content/lectures/week-01.md` · deck `/decks/week-01/` · 20 slides
+`src/content/lectures/week-01.md` · deck `/decks/week-01/` · 23 slides ·
+George 2–10, Haskell 11–23
 
-Two presenters, split by act, reflected in `teachers: [george-curious,
-haskell-byte]`. George Curious (convenor) opens with course-wide
-orientation; Haskell Byte (Crossing 1's tutor) takes the content. Each
-section reuses an existing `VOICE.md` page-type register rather than
-inventing new tone rules — the deck compresses several page types' voices
-into one performance artefact, deliberately swinging across `VOICE.md`'s
-stated "two poles" (Home → Policies) within a single deck instead of across
-separate pages.
+Restructured after a first draft opened on the Epley & Schroeder experiment
+and then cut to the teaching team, which read as a non-sequitur. The
+experiment is evidence for *how to do it*, not for *what this course is* —
+so it moved into Haskell's half, where it is the hook into the protocol, and
+George now opens on the idea instead.
 
-### Act 1 — George Curious: what you've signed up for
-
-| #  | Slide | Register | Class | Data / source | Links out |
-| -- | ----- | -------- | ----- | ------------- | --------- |
-| 1  | Cold open: you're on a bus next to a stranger. Talk, or keep to yourself — which ride is better? | Home | `impact` | — | — |
-| 2  | The answer: people forecast the reverse. The talkers had the best ride of all three conditions. | Home | — | sourced: Epley & Schroeder (2014) | — |
-| 3  | What this course is | Home | — | `courseMeta` (title, description, tags) — plain import, no await | — |
-| 4  | What you walk out with: five real interactions, one video, built one clip at a time | Home | — | prose; matches `index.astro` | `/sessions/` |
-| 5  | The shape of a Crossing: two weeks — out, then back. Both halves are the Crossing. | Lectures | — | prose | `/sessions/` |
-| 6  | Who's teaching it | People | — | `getCollection("people")` via `DeckPeople.astro` — portraits, name, role, affiliation | `/people/` |
-| 7  | What it's worth | Assessments | — | `getCollection("assessments")` via `DeckAssessments.astro` — title, weight, week (**not** `due`) | `/assessments/` |
-| 8  | Two rules: nothing is late, because nothing is submitted. Your reflections are yours — no AI. | Policies | `centered` | prose, near-empty slide — the flatness is the point | `/policies/` |
-| 9  | Handoff | — | `banner` | one line, explicit tone-shift beat | — |
-
-### Act 2 — Haskell Byte: the walk-up
-
-| #  | Slide | Class | Data / source | Links out |
-| -- | ----- | ----- | ------------- | --------- |
-| 10 | Talking to strangers is a protocol, not a trait | `impact` | sourced: Atomic Habits — systems over goals | — |
-| 11 | So you're not bad at this; you're running an inaccurate forecast | — | callback to slide 2 — *trim candidate if the deck runs long* | — |
-| 12 | Part 1 — Reason. "Because my course told me to" isn't one. | — | `01-say-something` | `/sessions/01-say-something/` |
-| 13 | Part 2 — Opener. Not "so, what do you do." | — | campus-concrete: library table, coffee-cart queue, edge of the room | — |
-| 14 | Part 3 — Exit. Leaving without slamming the door. | — | craft, unsourced | — |
-| 15 | Where it actually happens: the edge of the room | `quote` | full-bleed background | `/sessions/01-say-something/` |
-
-### Act 3 — Haskell Byte: the telling
-
-The act the earlier plan was missing. CLAUDE.md states it twice: the work is
-done out in the hallway **and reported back**, and a page with no trace of
-the telling is half a Crossing. Without this act the deck teaches the walk-up
-and never mentions that 60% of `crit-participation`'s criteria are about
-what you say afterwards.
-
-| #  | Slide | Class | Data / source | Links out |
-| -- | ----- | ----- | ------------- | --------- |
-| 16 | Half a Crossing. Doing it isn't the Crossing. | `impact` | CLAUDE.md's rule, said out loud | — |
-| 17 | What a report-back sounds like: the version you'd have given five minutes after, hesitations included | — | `02-how-it-landed` | `/sessions/02-how-it-landed/` |
-| 18 | Someone will ask a follow-up. That's not a stress test bolted on — it's the other half. | — | `crit-participation` criterion 3 | `/assessments/crit-participation/` |
-| 19 | Seek discomfort | `impact` | sourced: Yes Theory | — |
-| 20 | This week: go do it · get the clip · report at How It Landed | `centered` | — | `/sessions/01-say-something/`, `/assessments/legacy/`, QR |
-
-### Frontmatter
-
-```yaml
-teachers:
-  - george-curious
-  - haskell-byte
-slides: /decks/week-01/
-related:
-  - sessions/01-say-something
-  - sessions/02-how-it-landed
-  - assessments/crit-participation
-links:
-  - label: 'Epley & Schroeder (2014), "Mistakenly Seeking Solitude"'
-    url: https://www.chicagobooth.edu/media-relations-and-communications/press-releases/mom-was-wrong-you-should-talk-to-strangers
-  - label: James Clear, Atomic Habits
-    url: https://jamesclear.com/atomic-habits
-  - label: Yes Theory — Seek Discomfort
-    url: https://www.youtube.com/@YesTheory
-```
-
-`teachers` gains `haskell-byte`; `related` gains the report-back and the
-assessment. Three `links:`, each doing a different job — evidence,
-framework, motivation — and each now mapped to a specific slide (2, 10, 19).
-
-Epley & Schroeder is safe to state qualitatively only: nine experiments,
-three conditions (connection / solitude / control) on commuter trains and
-buses, connection group most positive, participants forecast the reverse.
-The release publishes no effect sizes, so the slide must not invent a number.
+| # | Slide | Class | Data / source |
+| - | ----- | ----- | ------------- |
+| 1 | Title — code, lecture, both presenters | `title` | `courseMeta` |
+| 2 | George Curious — what you've signed up for | `impact divider` | — |
+| 3 | Campus is an economy | — | the thesis, stated plainly |
+| 4 | So the coursework is spending it | — | the goal |
+| 5 | What this course is | — | `courseMeta` |
+| 6 | What you walk out with | — | five interactions, five clips |
+| 7 | A Crossing is two weeks | — | five run out/back; the sixth doesn't |
+| 8 | Who's teaching it | — | `DeckPeople` |
+| 9 | What it's worth | — | `DeckAssessments` |
+| 10 | Two rules | `centered` | Policies register |
+| 11 | Haskell Byte — how to actually do it | `impact divider` | — |
+| 12 | Say something, or headphones in? | `impact` | wants artwork |
+| 13 | Nearly everyone gets this wrong | — | Epley & Schroeder |
+| 14 | A protocol, not a trait | `impact` | Atomic Habits (in notes) |
+| 15 | Part 1 — Reason | — | `01-say-something` |
+| 16 | Part 2 — Opener | — | — |
+| 17 | Part 3 — Exit | — | — |
+| 18 | The edge of the room | `quote` | quotes `01-say-something` |
+| 19 | Half a Crossing | `impact` | CLAUDE.md's rule, out loud |
+| 20 | What a report-back sounds like | — | `02-how-it-landed` |
+| 21 | Someone will ask you a follow-up | — | `crit-participation` |
+| 22 | Seek discomfort | `quote` | Yes Theory |
+| 23 | This week | `action` | QR + three actions |
 
 ## Lecture 2 — Week 3: The Exchange
 
-`src/content/lectures/week-03.md` · deck `/decks/week-03/` · 13 slides
+`src/content/lectures/week-03.md` · deck `/decks/week-03/` · 18 slides ·
+George 2–9, Yu 10–18
 
-One presenter — Yu Tobe, Crossing 2's tutor — a deliberate contrast with
-week 1's two. Register is Lectures throughout: motive, objective, outcome,
-no course admin.
+Originally planned as Yu solo; rebuilt against the 50/50 rule. The split
+falls out cleanly along the two people's own registers — George is the
+course philosopher whose question is "was it worth doing", so he takes
+**value**: what a thing is worth with no price on it. Yu is the YouTuber, so
+takes **telling**: making a trade that survives being reported, and the clip.
 
-**Angle: a trade is only worth making if it's worth telling afterwards.**
-Straight out of Yu's bio, and a genuinely different lecture from week 1
-rather than a reprise. Week 1 said: walk up, then account for it. Week 3
-says: the account is the point, so make trades that survive being told.
-It also gives the clip a teacher — Yu is the YouTuber, and nothing on the
-site currently teaches clip craft.
+The sources divided the same way rather than being shared out arbitrarily:
+Mauss and Ariely are conceptual and went to George; Coats' story spine is
+craft and stayed with Yu.
 
-Structured on Yu's own beats — cold open, complication, payoff — which is a
-formal joke that is also just the right shape.
+| # | Slide | Class | Data / source |
+| - | ----- | ----- | ------------- |
+| 1 | Title — code, lecture, both presenters | `title` | `courseMeta` |
+| 2 | George Curious — what's it worth? | `impact divider` | — |
+| 3 | Crossing 1 was free | — | callback to week 1 |
+| 4 | No cash. On purpose. | — | Ariely |
+| 5 | What a gift obliges | — | Mauss |
+| 6 | Pick your currency | — | campus-concrete |
+| 7 | Name your price first | — | `03`'s spec |
+| 8 | Every trade has a rate | — | `04-the-exchange-rate` |
+| 9 | "Was it worth doing" | `impact` | George's signature question |
+| 10 | Yu Tobe — make it worth telling | `impact divider` | — |
+| 11 | Nobody watches a video where nothing happens | `impact` | wants artwork |
+| 12 | Last week you all stood up and reported | — | callback to Crossing 1 |
+| 13 | A boring report-back needed a better trade | — | Yu's thesis |
+| 14 | What's actually checked | — | `DeckSpec` on `03-make-a-trade` |
+| 15 | Storyboard it | — | Coats' story spine |
+| 16 | The clip | — | `legacy.md` + the consent rule |
+| 17 | You already have one | `impact` | closes the series |
+| 18 | This week | `action` | QR + four actions |
 
-### Cold open
+### Balance
 
-| #  | Slide | Class | Data / source | Links out |
-| -- | ----- | ----- | ------------- | --------- |
-| 1  | Nobody watches a video where nothing happens | `impact` | Yu's bio, verbatim | — |
-| 2  | Two weeks ago you all reported. The room leaned in for some and not others. | — | callback to Crossing 1 | `/sessions/02-how-it-landed/` |
-| 3  | A boring report-back isn't a bad grade waiting to happen. It's a sign the trade needs another pass. | — | Yu's bio, verbatim — the thesis | — |
-
-### Complication — the trade
-
-| #  | Slide | Class | Data / source | Links out |
-| -- | ----- | ----- | ------------- | --------- |
-| 4  | Conversation was free. This one has a price. | — | `03-make-a-trade`; spec lines rendered live via `DeckSpec.astro` | `/sessions/03-make-a-trade/` |
-| 5  | No cash, on purpose | — | sourced: Ariely, social vs market norms — introducing money doesn't price the exchange, it destroys it | — |
-| 6  | Name your price first, before you know what comes back | — | sourced: Mauss — give, receive, repay; `03`'s spec line 3 | — |
-| 7  | Pick your currency: object · favour · tip · skill | — | campus-concrete: the busker's amp, the badge stall, a bike chain | — |
-| 8  | Every trade has a rate, whether or not you did the arithmetic | — | `04-the-exchange-rate` | `/sessions/04-the-exchange-rate/` |
-| 9  | A bad trade is still a good report. "Fair" isn't the only acceptable answer. | — | `04`'s body + `crit-participation` — marked on what it bought you, not on whether you won | `/assessments/crit-participation/` |
-
-### Payoff — the telling, and the clip
-
-| #  | Slide | Class | Data / source | Links out |
-| -- | ----- | ----- | ------------- | --------- |
-| 10 | Storyboard your trade: what you wanted, what you offered instead, the bit you'd cut at thirty seconds | — | Yu's bio + sourced: Pixar story spine (Coats #4) | — |
-| 11 | The clip: one per Crossing, five by the end. Not documentation — the thirty seconds that prove it happened. | — | requirement lives in `legacy.md`; link, don't restate | `/assessments/legacy/` |
-| 12 | You already have one. Go look at your Crossing 1 clip. Would you watch it? | `impact` | closes the series | — |
-| 13 | This week: make the trade · name the price first · get the clip · report at The Exchange Rate | `centered` | — | `/sessions/03-make-a-trade/`, `/sessions/04-the-exchange-rate/`, QR |
-
-### Frontmatter
-
-```yaml
-week: 3
-date: 2026-08-10
-teachers:
-  - yu-tobe
-slides: /decks/week-03/
-related:
-  - sessions/03-make-a-trade
-  - sessions/04-the-exchange-rate
-  - assessments/legacy
-links:
-  - label: "Marcel Mauss, The Gift (1925)"
-    url: https://haubooks.org/the-gift/
-  - label: "Dan Ariely, Predictably Irrational — the cost of social norms"
-    url: https://www.npr.org/19216880
-  - label: "Emma Coats, Pixar's 22 rules of storytelling"
-    url: https://www.openculture.com/2013/03/pixars_22_rules_of_good_storytelling.html
-```
-
-`date` matches `03-make-a-trade`. Three `links:`, same three-job pattern as
-week 1 — framework (Mauss), evidence (Ariely), craft (Coats) — each mapped
-to a slide (6, 5, 10).
-
-The `assessments/legacy` edge renders a "Week 3: The Exchange" link on the
-Legacy page. That is correct — week 3 is where the video is actually
-taught — but it is the one edge worth a second look when the page is read
-whole.
+Week 3 lands at 8/9 slides. Week 1 is 9/13, because Haskell's half carries
+the protocol, the report-back and the send-off while George's is orientation
+— closer to 40/60 than 50/50 by slide count, though not by time, since the
+orientation slides are denser. Worth a look when the decks are read at
+presentation speed; padding George's half for symmetry would be the wrong
+fix.
 
 ## Shared technical decisions
 
@@ -289,10 +237,25 @@ Needed, in priority order:
    each other. **To generate.**
 2. **Week 3 slide 1** — full-bleed: something changing hands, no money in
    frame. **To generate.**
-3. **Week 1 slide 15** — the edge of the room. Could reuse
-   `src/assets/images/hero-home-themed.jpg` (already on disk, unused since
-   the home-hero trial on 2026-09-14), copied to `src/decks/assets/` because
-   deck image paths must be deck-relative. **No generation needed.**
+3. **Week 1 slide 18** — the edge of the room. Best spare is
+   `src/assets/images/home-hero-slopuni.jpg`, copied to `src/decks/assets/`
+   because deck image paths must be deck-relative. **No generation needed**,
+   with one caveat: it is a near-twin of `home-hero-slopuni-revised.jpg`,
+   which is the home page's current hero, so it may read as a repeat.
+
+   Reviewed all four home-hero files for this. `home-hero-colourful.jpg` is
+   off-palette for a dark deck (blues and teals against the deck's gold);
+   `home-hero-themed.jpg` is the same illustration gold-washed, but busy in
+   the mid-tones and letterboxed at 1024×430; `home-hero-slopuni.jpg` is the
+   bold gold/black/cream woodcut and the only one that matches the deck
+   surface.
+
+   None of the three substitutes for the two cold opens below — they are all
+   one idea (a busy campus hallway), already spent on the home page.
+
+   Note for any new deck artwork: all existing images are 1024px wide, and a
+   deck canvas is 1280×720, so a full-bleed background upscales about 25%.
+   Ask for 1280×720 or larger, 16:9.
 4. **Week 1 slide 6** — the five portraits, already in `src/content/people/`,
    reached via `DeckPeople.astro`. **No generation needed.**
 5. **Week 3 slide 7** — optional four-up of campus trade objects.

@@ -48,7 +48,7 @@
     line-height: 1.35;
   }
 
-  > p {
+  > p:not(.deck-presenter) {
     grid-column: 1;
     grid-row: 3;
   }
@@ -66,6 +66,67 @@
     span {
       font-size: 1rem;
       overflow-wrap: anywhere;
+    }
+  }
+}
+
+/* The presenter tag (see src/components/DeckPresenter.astro). Absolutely
+   positioned so it never joins a slide's layout --- including the `action`
+   slide, which places its own children on a grid. Sits inside the slide
+   gutter, bottom left, quiet enough to ignore while you're reading the slide
+   and legible enough to answer "who's talking" from the back of the room. */
+.reveal .slides section .deck-presenter {
+  position: absolute;
+  inset-block-end: 1.5rem;
+  inset-inline-start: 5rem;
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--at-primary);
+  opacity: 0.85;
+}
+
+/* On a brand-filled slide the tag would be gold on gold. */
+.reveal .slides section.impact .deck-presenter {
+  color: var(--at-on-primary);
+  opacity: 0.7;
+}
+
+/* A title slide carries both presenters as real content, and a divider slide
+   is the presenter's name at full size --- neither wants the tag as well. */
+.reveal .slides section.title .deck-presenter,
+.reveal .slides section.divider .deck-presenter {
+  display: none;
+}
+
+/* Divider: the half-way marker that says whose half you're in now. Reuses
+   the impact fill, with the name as the subject and the half's title under
+   it. */
+.reveal .slides section.divider {
+  h2 {
+    font-size: var(--r-heading1-size);
+  }
+
+  p {
+    color: var(--at-on-primary-alt);
+  }
+}
+
+/* Title slide: course code over the lecture title, presenters underneath. */
+.reveal .slides section.title {
+  place-content: center;
+
+  .presenters {
+    margin-block-start: 3rem;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--at-text-secondary);
+
+    strong {
+      color: var(--at-primary);
+      font-weight: 600;
     }
   }
 }

@@ -6,6 +6,7 @@ description:
 week: 3
 date: 2026-08-10
 teachers:
+  - george-curious
   - yu-tobe
 slides: /decks/week-03/
 links:
@@ -21,12 +22,11 @@ related:
   - assessments/legacy
 ---
 
-Yu Tobe takes this one alone, and opens by pointing at what happened the
-week before: some report-backs held the room and some died on the way out.
-Yu's argument is that the difference was almost never the telling. It was
-the trade.
+Half and half, like every lecture: George Curious on what a thing is worth
+when nobody has put a price on it, Yu Tobe on making a trade that survives
+being told afterwards.
 
-## Why it's shaped this way
+## George's half — what's it worth?
 
 Crossing 1 was free. You spent attention and some nerve, and if it went
 badly you walked away no worse off. Crossing 2 has a price: you put a real
@@ -37,11 +37,12 @@ Money is banned, and that's the interesting constraint rather than an
 arbitrary one. A price doesn't value a social exchange, it ends one: Ariely
 is the evidence, with people who'll cheerfully help you move a couch for
 free and refuse to do it for three dollars. Mauss is the framework — a gift
-obliges you to give, to receive and to repay, and none of those survive
-being settled in cash. [Make a Trade](/sessions/03-make-a-trade/) runs on
-the other set of rules entirely.
+obliges you to give, to receive and to repay, and a receipt settles the
+account instead. [Make a Trade](/sessions/03-make-a-trade/) runs on the
+other set of rules entirely, and it closes on the question George will
+still be asking in week 12: not did you do it, but was it worth doing.
 
-## The half about telling it
+## Yu's half — make it worth telling
 
 This is also where the video stops being a distant requirement. Yu spent
 years behind a camera and teaches the report-back the way a storyboard gets
