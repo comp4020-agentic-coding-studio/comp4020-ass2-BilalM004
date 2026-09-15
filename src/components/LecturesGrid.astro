@@ -8,13 +8,27 @@ const lectures = await getPublishedCollection("lectures");
 const visible = lectures.sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
 ---
 
-<CardGrid columns={2}>
-  {
-    visible.map((lecture) => (
-      <Card headingLevel="h2" title={lecture.data.title} href={`/lectures/${lecture.id}/`}>
-        {lecture.data.description && <p>{lecture.data.description}</p>}
-        <p><small>Week {lecture.data.week} · {formatCourseDate(lecture.data.date)}</small></p>
-      </Card>
-    ))
+<div class="lectures-grid">
+  <CardGrid columns={2}>
+    {
+      visible.map((lecture) => (
+        <Card headingLevel="h2" title={lecture.data.title} href={`/lectures/${lecture.id}/`}>
+          {lecture.data.description && <p>{lecture.data.description}</p>}
+          <p><small>Week {lecture.data.week} · {formatCourseDate(lecture.data.date)}</small></p>
+        </Card>
+      ))
+    }
+  </CardGrid>
+</div>
+
+<style>
+  .lectures-grid :global(.at-card-body) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
-</CardGrid>
+
+  .lectures-grid :global(.at-card-body > p:last-child) {
+    margin-block-start: auto;
+  }
+</style>
