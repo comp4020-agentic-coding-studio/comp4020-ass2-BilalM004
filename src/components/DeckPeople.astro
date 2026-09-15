@@ -1,0 +1,83 @@
+---
+// The teaching team, on a slide. Deck pages don't load the site's
+// stylesheets, so this styles itself off the --at-* brand tokens deck.css
+// already declares; and because a deck's `![bg]` paths must resolve relative
+// to the deck file, a component is the only way the portraits in
+// src/content/people/ reach a slide at all.
+import { Image } from "astro:assets";
+import { getPublishedCollection } from "astro-course-university/content";
+
+const people = await getPublishedCollection("people");
+
+const roleOrder: Record<string, number> = { convenor: 0, tutor: 1, guest: 2, other: 3 };
+
+// photoAlt rides the schema's passthrough, same as PeopleGrid.astro.
+function photoAlt(data: unknown): string {
+  const alt = (data as { photoAlt?: unknown }).photoAlt;
+  return typeof alt === "string" ? alt : "";
+}
+
+// The convenor first, then tutors in the order their Crossings run — the
+// affiliation strings lead with "Crossing N", so they sort themselves.
+const visible = people.sort((a, b) => {
+  const ra = roleOrder[a.data.role ?? "other"] ?? 99;
+  const rb = roleOrder[b.data.role ?? "other"] ?? 99;
+  if (ra !== rb) return ra - rb;
+  return (a.data.affiliation ?? "").localeCompare(b.data.affiliation ?? "");
+});
+---
+
+<ul class="deck-people">
+  {
+    visible.map((person) => (
+      <li>
+        {person.data.photo && (
+          <Image src={person.data.photo} alt={photoAlt(person.data)} width={200} height={200} />
+        )}
+        <strong>{person.data.title}</strong>
+        <span>{person.data.affiliation}</span>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .deck-people {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .deck-people li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .deck-people img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: var(--at-border-radius);
+    border: 2px solid var(--at-primary);
+  }
+
+  .deck-people strong {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--at-primary);
+  }
+
+  .deck-people span {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    color: var(--at-text-secondary);
+  }
+</style>

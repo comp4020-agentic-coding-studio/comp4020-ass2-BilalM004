@@ -1,0 +1,48 @@
+---
+// A Crossing's own `spec:` lines, on a slide. The spec is what a marker
+// actually checks, so a deck that retypes it is a deck that can disagree
+// with the page — this renders the same strings the Crossing page and the
+// JSON API serve.
+import { getEntry } from "astro:content";
+
+interface Props {
+  /** A sessions-collection id, e.g. "03-make-a-trade". */
+  session: string;
+}
+
+const { session } = Astro.props;
+const entry = await getEntry("sessions", session);
+if (!entry) throw new Error(`DeckSpec: no session "${session}"`);
+---
+
+<ul class="deck-spec">
+  {entry.data.spec.map((line) => <li>{line}</li>)}
+</ul>
+
+<style>
+  .deck-spec {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .deck-spec li {
+    position: relative;
+    padding-inline-start: 2.5rem;
+    font-size: 1.875rem;
+    line-height: 1.35;
+  }
+
+  /* A tick rather than a bullet: these are the lines being checked off. */
+  .deck-spec li::before {
+    content: "✓";
+    position: absolute;
+    inset-inline-start: 0;
+    color: var(--at-primary);
+    font-weight: 600;
+  }
+</style>

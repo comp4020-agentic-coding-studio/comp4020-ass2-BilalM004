@@ -11,6 +11,7 @@ spec:
   - the invitation was decided on the spot, not planned in advance
   - you actually asked, out loud, and heard the answer
   - you can say what you'd have lost by not asking
+  - you came away with a short clip of your own — the fourth of your five
 related:
   - sessions/08-the-rejection-report
 ---
@@ -37,4 +38,6 @@ who has every right to say no and might.
 The ask itself, and the answer — yes or no, either one is reportable — plus
 whatever you noticed in yourself in the second before you said it out
 loud. [The Rejection Report](/sessions/08-the-rejection-report/) is where
-that gets told.
+that gets told. Get a clip — wherever the quest went, or just you
+afterwards saying what the answer was. Fourth of your five for
+[Legacy](/assessments/legacy/), and a no is as worth recording as a yes.

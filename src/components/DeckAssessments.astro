@@ -1,0 +1,73 @@
+---
+// What the course is worth, on a slide, read live from the assessments
+// collection so the weights can't drift from the pages that own them (the
+// same collection spec/assessment-weights.test.ts already asserts sums to
+// 100).
+//
+// Deliberately no `due` column. crit-participation and legacy both carry
+// 2026-10-30, and crit-participation's own page says that date "is when
+// Crossings run until, not a single deadline" — a slide showing it as a due
+// date would state something its source page disclaims. Week is the honest
+// column: when the mark is actually made.
+import { getPublishedCollection } from "astro-course-university/content";
+import { crossingNumber, sessionLabels } from "../site-config";
+
+const assessments = await getPublishedCollection("assessments");
+const visible = assessments.sort((a, b) => a.data.week - b.data.week);
+
+// The weighted grade runs every week; the holistic ones land at one
+// Crossing each.
+const when = (assessment: (typeof visible)[number]) =>
+  assessment.data.marking?.mode === "holistic"
+    ? `${sessionLabels.singular} ${crossingNumber(assessment.data.week)}, week ${assessment.data.week}`
+    : "every week";
+---
+
+<ul class="deck-assessments">
+  {
+    visible.map((assessment) => (
+      <li>
+        <span class="weight">{assessment.data.weight}%</span>
+        <span class="title">{assessment.data.title}</span>
+        <span class="when">{when(assessment)}</span>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .deck-assessments {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .deck-assessments li {
+    display: grid;
+    grid-template-columns: 7rem 1fr auto;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding-block-end: 1rem;
+    border-block-end: 1px solid var(--at-divider);
+  }
+
+  .weight {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--at-primary);
+    text-align: right;
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .when {
+    font-size: 1.5rem;
+    color: var(--at-text-secondary);
+  }
+</style>

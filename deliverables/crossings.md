@@ -123,6 +123,29 @@ above. `05-set-up-shop.md`, `06-hallway-showcase.md` and
 `midsem-checkpoint.md` were all updated to say the stall is run by an
 assigned team and marked as one account, not five individual slices of it.
 
+## The five clips (added while planning the lectures)
+
+`index.astro` promises "one video, built one clip at a time" and
+`legacy.md` requires a five-clip video at the Finale — but no Crossing page
+and no `spec:` line anywhere told a student to actually film anything. A
+student reading only the Crossings would reach week 11 owing five clips
+they never knew to shoot.
+
+Fixed here rather than in the lectures, because a lecture reports facts, it
+doesn't own them. Each of the five fieldwork Crossings (`01`, `03`, `05`,
+`07`, `09`) now carries a `spec:` line naming its clip by ordinal — first
+of five through last of five — plus a sentence in "What you carry into next
+week" linking to `legacy.md` for what the set is ultimately for. Crossing
+3's says the clip is the one thing the team doesn't share: five people, five
+clips, same five minutes of stall if they like.
+
+Surfaced by `lectures.md`; both week 1 and week 3's decks depend on it.
+
+**Still open: nothing on the site says to ask before filming a stranger.**
+The course now instructs students to film people they've just met, five
+times a semester, and `policies.md` is silent on consent. That's a Policies
+line, not a Crossings one, so it's flagged rather than fixed here.
+
 ## Open questions
 
 None outstanding — teacher assignment and file naming (above) are both

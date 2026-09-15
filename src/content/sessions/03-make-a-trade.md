@@ -13,6 +13,7 @@ spec:
   - no money changed hands
   - you can say what you expected to get back before you knew whether you
     got it
+  - you came away with a short clip of your own — the second of your five
 related:
   - sessions/04-the-exchange-rate
 ---
@@ -36,4 +37,6 @@ you'll get, and let the other person set the rest of the price.
 
 The trade itself, plus your honest guess at what it was worth going in —
 [The Exchange Rate](/sessions/04-the-exchange-rate/) is where that guess
-gets checked against what actually came back.
+gets checked against what actually came back. Get a clip of whatever
+changed hands, or of yourself straight afterwards — second of your five for
+[Legacy](/assessments/legacy/).

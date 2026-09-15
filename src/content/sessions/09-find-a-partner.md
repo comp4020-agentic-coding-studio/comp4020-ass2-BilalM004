@@ -11,6 +11,8 @@ spec:
   - the partner was found that week, in person, not arranged in advance
   - what you built was made together, not split up and assembled apart
   - you can point to a decision in the build that wasn't yours alone
+  - you came away with a short clip of what got built — the last of your
+    five
 related:
   - sessions/10-what-we-made
 ---
@@ -36,4 +38,6 @@ your half plus theirs stapled together afterward.
 The thing you made, whatever shape it took, and at least one decision in
 it that came from your partner, not you. [What We Made](/sessions/10-what-we-made/)
 is where you both — or you, reporting for both — tell the room what
-happened.
+happened. Film the thing you made — the last of your five for
+[Legacy](/assessments/legacy/), and the one that closes the set. Your
+partner goes in it only on the terms [Policies](/policies/) sets out.

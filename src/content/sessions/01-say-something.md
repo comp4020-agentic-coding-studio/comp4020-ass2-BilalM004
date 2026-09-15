@@ -12,6 +12,8 @@ spec:
     to before
   - the reason you said hello was real — not "because my course told me to"
   - you can name one thing about them you didn't know an hour earlier
+  - you came away with a short clip of your own — the first of the five
+    you need at the end
 related:
   - sessions/02-how-it-landed
 ---
@@ -38,4 +40,7 @@ reason to be talking to them is what makes it land. If the honest answer to
 Nothing written. Just the conversation itself, close enough to the moment
 that you can still say exactly what you asked, what surprised you, and
 what it cost you to walk over — [How It Landed](/sessions/02-how-it-landed/)
-is where you tell the room.
+is where you tell the room. Come away with a short clip too — the first of
+the five [Legacy](/assessments/legacy/) asks for at the end. It's your
+record of your Crossing, not a recording of them; if you want them in it,
+[Policies](/policies/) says what that takes.

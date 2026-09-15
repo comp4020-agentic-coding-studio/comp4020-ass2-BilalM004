@@ -15,6 +15,8 @@ spec:
     whole time
   - a stranger could walk up to it without any of you starting the
     conversation first
+  - each of you came away with a clip of the stall running — the third of
+    your five
 related:
   - sessions/06-hallway-showcase
 ---
@@ -43,3 +45,7 @@ showed up instead of what you'd planned for, and what running it together
 rather than solo changed. The [Hallway Showcase](/sessions/06-hallway-showcase/)
 is where the team presents it, and where the Midsemester Checkpoint mark
 is made — on the stall as a whole, not on any one teammate's slice of it.
+
+One thing that isn't shared: the clip. You each need your own third-of-five
+for [Legacy](/assessments/legacy/), though there's nothing stopping all of
+you filming the same five minutes of the stall from five different phones.

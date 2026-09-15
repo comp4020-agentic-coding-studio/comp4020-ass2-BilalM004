@@ -11,3 +11,61 @@
  * slide class you reach for (`_class: quote`), a code-heavy layout, a
  * background. */
 @import url("astro-theme-university/styles/deck.css");
+
+/* A text-dense slide's opening paragraph --- the course description is 80-300
+   characters by schema, which at the deck's 2.25rem body size is most of a
+   slide on its own. Shrinking it here beats paraphrasing it into something
+   shorter, which would be a second copy of a fact course-config.ts owns. */
+.reveal .slides section .lede {
+  font-size: 1.75rem;
+  line-height: 1.4;
+  max-width: 44ch;
+}
+
+/* The closing "go and do it" slide: a short numbered list beside a QR code.
+   The QR sits at the top level of the slide rather than inside a wrapper
+   div, because astromotion's `![qr]` remark plugin doesn't descend into JSX
+   elements --- nested, it silently degrades to a plain <img> pointing at the
+   URL, which renders as a broken image. So the two columns are built here,
+   by placing the slide's own children on a grid, instead of in the markup.
+
+   The theme's default QR is 480px square, two thirds of the slide height ---
+   fine on a slide that is only a QR, too much beside anything else. */
+.reveal .slides section.action {
+  grid-template-columns: 1fr auto;
+  align-content: center;
+  column-gap: 4rem;
+
+  > h2 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  > ol {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 1.875rem;
+    line-height: 1.35;
+  }
+
+  > p {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  > .qr-code {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+    align-self: center;
+
+    svg {
+      width: 300px;
+      height: 300px;
+    }
+
+    span {
+      font-size: 1rem;
+      overflow-wrap: anywhere;
+    }
+  }
+}
