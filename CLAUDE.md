@@ -50,6 +50,9 @@ lectures, people and policies each have their own note. See `VOICE.md`.
   tone drift, policy mismatches, thematic drift — live in the `content-review`
   skill. Run it before a commit that adds or edits session, assessment,
   lecture, or policy copy; not on every small edit.
+- Any layout or CSS change gets checked at both a mobile and a desktop
+  viewport before it's called done, not just the viewport it was written at.
+  Use 1920×1080 for desktop and 390×844 for mobile.
 
 ## What's fixed, not mine to change
 
