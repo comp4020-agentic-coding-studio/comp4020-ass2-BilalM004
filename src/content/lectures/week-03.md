@@ -15,7 +15,7 @@ links:
   - label: Dan Ariely, Predictably Irrational — the cost of social norms
     url: https://www.npr.org/19216880
   - label: Emma Coats, Pixar's 22 rules of storytelling
-    url: https://www.openculture.com/2013/03/pixars_22_rules_of_good_storytelling.html
+    url: https://www.aerogrammestudio.com/2013/03/07/pixars-22-rules-of-storytelling/
 related:
   - sessions/03-make-a-trade
   - sessions/04-the-exchange-rate
