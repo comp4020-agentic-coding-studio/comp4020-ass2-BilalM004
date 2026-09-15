@@ -38,6 +38,7 @@ export const siteConfig = defineSiteConfig({
   ],
 
   licence: "CC-BY-NC-SA-4.0",
-  socialImage: "/src/assets/images/card.png",
-  socialImageAlt: `A preview card for ${courseMeta.code}: ${courseMeta.title}`,
+  socialImage: "/src/assets/images/home-card.jpg",
+  socialImageAlt:
+    "An illustrated school hallway lined with lockers and arched windows, students clustered in conversation with backpacks and books past a campus noticeboard",
 });
