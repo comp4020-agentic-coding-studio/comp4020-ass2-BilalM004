@@ -27,9 +27,10 @@ what doesn't land.
 
 No stage, no clock, no five-clip run-through — just small groups talking
 through what each of you actually lived across the semester. Bring the
-account you're planning for the Finale and let people ask into it: what
-happened, what you'd do differently, which Crossing you're quietly less
-sure about than the others.
+account you're planning for the Finale — [Legacy](/assessments/legacy/) is
+what it has to cover and what it's judged on — and let people ask into it:
+what happened, what you'd do differently, which Crossing you're quietly
+less sure about than the others.
 
 ## What you leave with
 

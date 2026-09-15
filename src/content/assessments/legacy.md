@@ -1,8 +1,8 @@
 ---
 title: Legacy
 description:
-  The closing two weeks — no fieldwork, just the Hallway Finale — where you
-  present your whole semester and watch everyone else present theirs
+  The closing fortnight — no fieldwork left, just the account of the whole
+  semester, presented at the Hallway Finale in week 12
 week: 12
 due: 2026-10-30T12:00:00+10:00
 weight: 40
@@ -14,7 +14,7 @@ marking:
     actually worked, whether the five-clip video backs up what's being
     claimed, and whether a viewer who missed the semester could follow it.
 spec:
-  - submitted/presented in the format named below, in weeks 11–12
+  - presented at the Hallway Finale, in week 12
   - it walks through all five Crossings, not just the ones that went well
   - the five-clip video plays and matches what's being claimed about each Crossing
   - it names, honestly, what the semester's investment bought overall
@@ -33,11 +33,16 @@ happened.
 
 > Walk the room through your semester, then play the video that backs it up.
 
-Weeks 11 and 12 are the Hallway Finale: some of that time you're presenting,
-the rest you're in the room watching everyone else's. The presentation
-covers all five Crossings — Starting a Conversation through Building With
-Others — not a highlight reel of the ones that went well. If something
-fell flat, that's part of the account, not something to leave out.
+The fortnight runs in two halves. Week 11 is the
+[Discussion Lab](/sessions/11-discussion-lab/) — no stage, no clock, just
+talking your account through with peers while there's still time to change
+it. Week 12 is [the Hallway Finale](/sessions/12-the-hallway-finale/),
+where you present it and then sit in the room for everyone else's.
+
+The presentation covers all five Crossings — Starting a Conversation
+through Building With Others — not a highlight reel of the ones that went
+well. If something fell flat, that's part of the account, not something to
+leave out.
 
 ## What you present
 

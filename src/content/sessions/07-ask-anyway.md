@@ -11,7 +11,8 @@ spec:
   - the invitation was decided on the spot, not planned in advance
   - you actually asked, out loud, and heard the answer
   - you can say what you'd have lost by not asking
-  - you came away with a short clip of your own — the fourth of your five
+  - you came away with a clip of the ask, or wherever the quest went —
+    fourth of your five
 related:
   - sessions/08-the-rejection-report
 ---

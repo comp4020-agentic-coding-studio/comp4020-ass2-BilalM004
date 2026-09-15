@@ -1,44 +1,44 @@
 ---
 title: Hallway Showcase
 description:
-  Crossing 3's report-back — the Midsemester Checkpoint, where the team
-  presents the stall as one account at the halfway point of the semester
+  Crossing 3's report-back — the session where each team takes the floor in
+  turn and presents its stall to a fuller room than the usual weekly circle
 week: 6
 date: 2026-08-31
 teachers:
   - george-curious
 spec:
-  - the team presents the stall as one account — what was set up, why it
-    was scaled the way it was, and what actually happened
-  - what was set up is a real step up in scale from an earlier solo
-    Crossing, not a repeat at the same size
-  - the account matches what the team actually reported living through it,
-    not a version tidied up for a bigger audience
+  - the team presents together in its Showcase slot, once, rather than five
+    separate takes
+  - every teammate is in the room for it
+  - the team takes questions on the stall as a whole, not on who did which
+    part of it
 related:
   - assessments/midsem-checkpoint
   - assessments/crit-participation
 ---
 
-The Showcase is the one Crossing that doubles as a checkpoint on the whole
-semester so far — not just this week's report, but the biggest bet the
-team has made with the hallway's attention, presented to a fuller room
-than the usual weekly circle.
+The stalls have come down and the teams are back in one room. Week 6 runs
+as a series of team presentations rather than the usual circle of
+individual reports, each team taking the floor in turn.
 
 ## In the room
 
-The team presents once, together — not five separate takes stitched
-together for the room: what was set up, why it was scaled that way, and
-what actually happened once it was out there, including whatever didn't go
-to plan. The room's seen your earlier, smaller solo Crossings; the
-Showcase is judged against that.
+A bigger audience than the usual weekly Crossing, and one slot per team
+rather than one per student. Your team presents together — all of you at
+the front, one account between you — and then takes questions. The rest of
+the session you're in the audience for the other teams.
+
+What has to be in that presentation, and how it's marked, is on
+[Midsemester Checkpoint](/assessments/midsem-checkpoint/).
 
 ## What gets asked
 
-Expect harder questions than a normal week's, aimed at the team's choices
-as a whole — about scale, about what you'd have done with more time, about
-whether the version being presented matches what the team actually
-reported living through it. Each teammate still gives their own weekly
-report at Crossing Participation; the Showcase and its mark belong to the
-stall together. See [Midsemester Checkpoint](/assessments/midsem-checkpoint/)
-for how this carries its own weight, separate from the ordinary weekly
-grade.
+Harder questions than a normal week's, and aimed at the team rather than at
+any one of you: why you scaled it the way you did, what you'd have done with
+another week, what you'd set up differently tomorrow. Answer them together —
+"that was someone else's part" isn't an answer here.
+
+You still give your own weekly report this week, the same as any other
+Crossing. The Showcase sits on top of it, and
+[Crossing Participation](/assessments/crit-participation/) covers that half.

@@ -12,8 +12,8 @@ spec:
     to before
   - the reason you said hello was real — not "because my course told me to"
   - you can name one thing about them you didn't know an hour earlier
-  - you came away with a short clip of your own — the first of the five
-    you need at the end
+  - you came away with a clip — the place, the aftermath, or you talking
+    straight after — first of your five
 related:
   - sessions/02-how-it-landed
 ---

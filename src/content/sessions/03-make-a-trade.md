@@ -13,7 +13,8 @@ spec:
   - no money changed hands
   - you can say what you expected to get back before you knew whether you
     got it
-  - you came away with a short clip of your own — the second of your five
+  - you came away with a clip of whatever changed hands — second of your
+    five
 related:
   - sessions/04-the-exchange-rate
 ---

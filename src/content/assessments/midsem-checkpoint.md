@@ -16,22 +16,25 @@ marking:
     repeat at the same scale, and whether the Showcase account matches
     what the team actually reported living through it.
 spec:
-  - presented at the Hallway Showcase, by the team as one account
-  - what was set up is a real step up in scale from an earlier solo
-    Crossing — more people, more time invested, more that could go wrong
-  - the account matches what the team actually reported living through it,
-    not a tidied-up version for a bigger audience
+  - the team presents the stall as one account, not five individual slices
+    of it
+  - the stall is weighed against what one of you managed solo in an
+    earlier Crossing, not against the other teams
+  - the account covers what was set up, why it was scaled that way, and
+    what actually happened, including what didn't go to plan
+  - it matches what the team reported living through it, not a tidied-up
+    version for a bigger audience
 related:
+  - sessions/05-set-up-shop
   - assessments/crit-participation
   - assessments/legacy
 ---
 
-Crossing 3 hands you a team, assigned for the Crossing, and asks you to put
-something out in the hallway together — bigger than any solo Crossing
-before it — for anyone to stop at, and see who does. It's the biggest
-undertaking of the first half, and the Hallway Showcase is where that scale
-earns its own weight, separate from the ordinary weekly grade every
-Crossing gets.
+Crossing 3 is the biggest undertaking of the first half: a team, a stall,
+and more that can go wrong than in any solo Crossing before it. The Hallway
+Showcase is where that scale earns its own weight, separate from the
+ordinary weekly grade every Crossing gets. This page is what the team has
+to present there, and what it's marked on.
 
 ## The brief
 
@@ -39,12 +42,11 @@ Crossing gets.
 > anything any of you has tried solo, then present what actually happened
 > at the Showcase.
 
-Bigger means more exposure, not just more effort: something that runs
-without any one teammate standing right next to it the whole time, that a
-stranger could walk up to without any of you initiating. The Showcase
-presentation isn't a recap of the week's live reports — it's the team's
-fuller account, together, of what you'd built for and what actually showed
-up instead.
+What counts as bigger, and what the stall has to survive without you, is
+set out in [Set Up Shop](/sessions/05-set-up-shop/). This page is about
+what you then say about it. The Showcase presentation isn't a recap of the
+week's live reports — it's the team's fuller account, together, of what you
+built for and what actually showed up instead.
 
 ## What you present
 

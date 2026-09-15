@@ -19,6 +19,7 @@ spec:
     your five
 related:
   - sessions/06-hallway-showcase
+  - assessments/midsem-checkpoint
 ---
 
 Crossings 1 and 2 both needed you standing right there, alone, one
@@ -43,8 +44,10 @@ quietly doing twice the work.
 Not a polished pitch — the team's real account of what got built, what
 showed up instead of what you'd planned for, and what running it together
 rather than solo changed. The [Hallway Showcase](/sessions/06-hallway-showcase/)
-is where the team presents it, and where the Midsemester Checkpoint mark
-is made — on the stall as a whole, not on any one teammate's slice of it.
+is the session where the team presents it;
+[Midsemester Checkpoint](/assessments/midsem-checkpoint/) is what that
+presentation has to contain and how it's marked — on the stall as a whole,
+not on any one teammate's slice of it.
 
 One thing that isn't shared: the clip. You each need your own third-of-five
 for [Legacy](/assessments/legacy/), though there's nothing stopping all of
