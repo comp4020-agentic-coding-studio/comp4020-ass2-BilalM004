@@ -39,6 +39,7 @@ any one of you: why you scaled it the way you did, what you'd have done with
 another week, what you'd set up differently tomorrow. Answer them together —
 "that was someone else's part" isn't an answer here.
 
-You still give your own weekly report this week, the same as any other
-Crossing. The Showcase sits on top of it, and
-[Crossing Participation](/assessments/crit-participation/) covers that half.
+Crossing 3 still earns its own participation mark like every Crossing, on
+what you did at the stall and what you say about it —
+[Crossing Participation](/assessments/crit-participation/) covers that. The
+Showcase sits on top, and carries the Checkpoint's separate weight.

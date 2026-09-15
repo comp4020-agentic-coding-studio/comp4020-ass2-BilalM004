@@ -17,10 +17,11 @@ related:
   - sessions/10-what-we-made
 ---
 
-Every Crossing so far has been you and a stranger meeting once. This one
-asks you to build something with them — together, in the moment, with
-whatever's around, and without dividing the work so each of you just does
-your own half.
+So far a stranger has been someone you talked to, traded with, or asked
+for something — and in Crossing 3, someone who walked up to a stall your
+team had built. This one asks you to build something *with* one: together,
+in the moment, with whatever's around, and without dividing the work so
+each of you just does your own half.
 
 ## The brief
 

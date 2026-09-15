@@ -150,6 +150,36 @@ because a test demanded them:
   no page said before. The scale bar itself still lives on `05` and in
   `marking.description`.
 
+## The marking unit is the Crossing, not the week
+
+Found by a full `content-review` pass. The 40% criterion read "Did
+something real in the hallway *that week*" and the body promised "ten weeks,
+ten chances", but fieldwork happens five times (weeks 1, 3, 5, 7, 9) and the
+even weeks are report-backs by design. A student following the structure
+correctly forfeited the largest criterion in half the semester, and nothing
+written told a marker whether "that week" meant the calendar week or the
+Crossing.
+
+**Decided: participation is marked per Crossing, and attendance spans both
+of its weeks.** The doing week and the telling week are marked together, and
+you have to be in the room for both.
+
+This keeps the 40/30/30 criteria exactly as they were — they finally read
+correctly, with *did something real* earned in the fieldwork week and the
+other two at the report-back — and needs no schema change.
+
+The alternative, marking each week separately, was priced and rejected: it
+costs about seven files rather than two, because the five fieldwork pages
+(`01`, `03`, `05`, `07`, `09`) don't describe a session at all. They carry
+"The brief" and "What you carry into next week" while every report-back page
+has an "In the room". Marking week 1 on its own means first deciding what
+the week 1 session *is*, which is a design addition, not a wording fix.
+
+Still open, deliberately: those five pages remain silent about their own
+session. The attendance rule is stated once here, on the assessment that
+owns it, rather than restated five times. If the fieldwork pages should
+describe their session, that is its own piece of work.
+
 ## Decisions made
 
 - Reflection write-ups are **not** a separate graded piece — they're spoken

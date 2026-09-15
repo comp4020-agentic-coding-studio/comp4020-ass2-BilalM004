@@ -31,4 +31,4 @@ just as reportable as one that didn't, as long as you can say why.
 Expect a follow-up aimed at the rate itself, not just the story: would you
 make the same trade again, what would you ask for instead, did you get
 the better end of it or the worse. See [Crossing Participation](/assessments/crit-participation/)
-for how a live report and reflection turn into the week's mark.
+for how a live report and reflection turn into the Crossing's mark.

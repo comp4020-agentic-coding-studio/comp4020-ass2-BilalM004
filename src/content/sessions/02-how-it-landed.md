@@ -35,4 +35,4 @@ Someone in the room will ask a follow-up — what you'd have done if they'd
 said no, whether you'd approach the same way again, what you noticed about
 yourself mid-conversation. That's not a stress test bolted onto the report;
 it's the other half of it. See [Crossing Participation](/assessments/crit-participation/)
-for how the week's mark actually gets made.
+for how the Crossing's mark actually gets made.

@@ -58,7 +58,7 @@ anyone the first time.
 Then the part most people underestimate — the telling. Crossing 1 isn't
 finished when the conversation ends. The week after, you stand up and
 account for it at [How It Landed](/sessions/02-how-it-landed/), and that's
-where most of [the week's mark](/assessments/crit-participation/) is
+where most of [the Crossing's mark](/assessments/crit-participation/) is
 actually made. A conversation nobody hears about is half a Crossing.
 
 ## What you should leave knowing

@@ -33,7 +33,7 @@ related:
 Crossing 3 is the biggest undertaking of the first half: a team, a stall,
 and more that can go wrong than in any solo Crossing before it. The Hallway
 Showcase is where that scale earns its own weight, separate from the
-ordinary weekly grade every Crossing gets. This page is what the team has
+ordinary participation grade every Crossing gets. This page is what the team has
 to present there, and what it's marked on.
 
 ## The brief
