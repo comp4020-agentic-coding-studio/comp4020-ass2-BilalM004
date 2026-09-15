@@ -244,54 +244,42 @@ artefact rather than a bullet outline, which is what `VOICE.md` asks for.
 but needs `puppeteer-core`, which is not in `devDependencies`. Either add it
 or accept eyeball-only verification at the two marking viewports.
 
-## Imagery
+## Imagery — decided against
 
-**Decided: no full-bleed backgrounds, and no sourced photography.** Three
-drawn figures instead, on the slides where structure is the content.
+**No backgrounds, no photography, and no further figures.** The three
+existing figures (`FigCrossing`, `FigForecast`, `FigSpine`) stay; nothing
+else gets added.
 
-### Why not sourced photos
+Every cold open is a flat brand-fill `impact` slide, and that is the
+treatment rather than a placeholder for one: the line carries the slide, and
+a photograph clashes with an identity that is entirely illustrated
+gold/black/cream halftone. Sourced photography was investigated and dropped
+(see the note below on the potlatch photograph).
 
-Looked properly before ruling it out. Three reasons:
+Four figures were raised by the agents and declined:
 
-- **Style.** The identity is illustrated gold/black/cream halftone — the
-  portraits, the home heroes. A photograph reads as pasted onto a dark gold
-  deck whatever its provenance.
-- **The best-fitting subject is one to leave alone.** Mauss's argument rests
-  on the potlatch, and Commons has a public-domain 1910 Alert Bay photograph
-  — catalogued as a tourist postcard, taken while the potlatch was
-  criminalised in Canada. Using it to illustrate undergraduates swapping
-  badges makes a serious thing decorative.
-- **What's left is decorative.** A portrait of Mauss, or the CC BY-SA photo
-  of a book he signed for Georges Dumas. Neither carries an argument the
-  slide doesn't already make, and BY-SA's ShareAlike sits awkwardly beside
-  the site's CC-BY-NC-SA-4.0.
+| Candidate | Where | Why not |
+| --------- | ----- | ------- |
+| Per-person output against group size | wk 5, Ringelmann | The slide carries it in two sentences |
+| Predicted-vs-actual compliance bar | wk 7, Flynn & Lake | A bar chart would look more precise than a source that reports the gap qualitatively |
+| Ask → no → adjust → ask loop | wk 7 | Text states it more compactly |
+| Five Crossings as a row with a clip under each | wk 11, also wanted at wk 9 | By the fourth Crossing the point has been made in words three times |
 
-### The three figures
+Every `comment` fence in the six decks was rewritten to record these as
+decisions rather than pending work, so the next person reads a choice and
+not a TODO. The rejected option is still named in each, with what it would
+have been, so revisiting is cheap.
 
-Inline SVG components, coloured from the `--at-*` tokens the deck already
-uses, sharp at any projection size, no attribution burden.
+### Why not sourced photography
 
-| Component | Slide | What it carries |
-| --------- | ----- | --------------- |
-| `FigCrossing.astro` | Week 1, slide 7 | Twelve weeks as six Crossings — an outlined "out" week paired with a filled "back" week, the sixth pair broken because Crossing 6 has no fieldwork. Says the structure, the count and the exception in one graphic. |
-| `FigForecast.astro` | Week 1, slide 13 | Epley & Schroeder's reversal: one line from *predicted worst* to *actually best*. |
-| `FigSpine.astro` | Week 3, slide 15 | The four-beat story spine, with "one day" filled because that's the beat the slide says a dull trade is missing. |
-
-Each figure let its slide's prose shrink — the reversal, the five-and-one
-structure and the spine were all being spelled out in sentences that the
-figure now carries, which also buys back vertical space on three of the
-slides flagged as tight.
-
-`FigForecast` deliberately plots **no magnitudes and ranks no other
-condition.** The release publishes no effect sizes, so a three-way chart
-would be inventing data; the figure states only the reversal, and captions
-itself to say so.
-
-### Still unresolved
-
-The two cold-open slides (week 1 slide 12, week 3 slide 11) stay flat gold
-`impact` slides. They read as deliberate rather than unfinished, and their
-`comment` fences still describe the artwork if that decision is revisited.
+Looked properly before ruling it out. The identity is illustrated
+gold/black/cream halftone, so a photograph reads as pasted onto a dark deck
+whatever its provenance. The best-fitting subject by far was a
+public-domain 1910 potlatch photograph for week 3's Mauss material —
+declined, because the catalogue record lists it as a tourist postcard and it
+was taken while the potlatch was criminalised in Canada. Using it to
+illustrate undergraduates swapping badges makes a serious thing
+decorative. What remained was decorative rather than argumentative.
 
 ## Cross-block issue: the clip is barely on the site
 
@@ -374,11 +362,9 @@ paragraphs of body copy.
   slides without artwork; each has a `comment` fence saying what it wants
   and to switch to `_class: hero` when it arrives.
 - Whether week 1 slide 2 wants a redrawn chart.
-- **`index.astro` promises "a written record of five real interactions",
-  but no assessment produces a written record** — `crit-participation` says
-  "nothing written ahead of time… the report and reflection are spoken,
-  live", and `legacy` says "no written report is due separately". The decks
-  were written to the assessment pages (five interactions, five clips) and
-  deliberately don't repeat the home page's phrasing. Belongs to `home.md`.
+- ~~`index.astro` promises a written record no assessment produces~~ —
+  **resolved**: the course now asks for a short written reflection per
+  Crossing. See `home.md`. Week 1's "what you walk out with" slide was
+  updated to match.
 - Slide fit at both viewports (see above) — the one thing `pnpm check`
   cannot tell us.

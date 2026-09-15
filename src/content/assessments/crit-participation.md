@@ -17,8 +17,8 @@ marking:
     - name: Gave the group something to push back on
       weight: 30
 spec:
-  - you're in the room for both weeks of every Crossing — the week you go
-    out, and the week you report back
+  - you're in the room for both weeks of every Crossing — the week it
+    opens, with its lecture, and the week it closes
   - the thing you report is something you actually did that Crossing — a
     conversation, a stall, a favour, a build — not a plan or a summary of
     intentions — and see Policies if you couldn't do the hallway work
@@ -38,8 +38,9 @@ across both of its weeks.
 
 That's the unit: a Crossing, not a week. You go out into the hallway one
 week and come back and tell the group about it the next, and the two halves
-are marked together. Be in the room for both — the doing week and the
-telling week. Five Crossings of fieldwork, five chances to actually go do
+are marked together. Be in the room for both: every Crossing opens with
+[its lecture](/lectures/), and closes the week after, when you account for
+it to the group. Five Crossings of fieldwork, five chances to actually go do
 something real — start a conversation, run a stall, ask a favour and maybe
 not get it — and then stand up and say so, out loud, in front of people who
 can ask you a hard question about it. Crossing 6 is different: there's no
@@ -67,7 +68,13 @@ enough to be honest.
 
 Nothing written ahead of time. The report and reflection are spoken, live,
 at your Crossing; the mark comes from being there — both weeks — and from
-what you say when the room asks "what did that actually get you." Couldn't
-do the hallway work itself when everyone else did? See
+what you say when the room asks "what did that actually get you."
+
+What you do write is for you, not for us: a few lines about the hallway
+week, put down while it's still unpolished. Five of those are the written
+record you walk out with, and what your [Legacy](/assessments/legacy/)
+account gets built out of.
+
+Couldn't do the hallway work itself when everyone else did? See
 [Policies](/policies/) — there's no reporting after the fact, but there is
 a way to still bring something real to show for it.

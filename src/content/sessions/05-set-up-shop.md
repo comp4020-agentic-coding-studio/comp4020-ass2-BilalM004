@@ -32,8 +32,9 @@ works when no single one of you is the one initiating it.
 > With your assigned team, set up something in the hallway bigger than
 > anything any of you has tried solo — then see who stops.
 
-Bigger doesn't mean flashier — it means more exposure and more that could
-go sideways: a table that has to stay staffed over a lunch break, a small
+Teams are five, assigned for the Crossing rather than chosen. Bigger
+doesn't mean flashier — it means more exposure and more that could go
+sideways: a table that has to stay staffed over a lunch break, a small
 event that needs every teammate to actually show up for it to work, a sign
 that has to do the inviting when none of you can be there in person.
 What's supposed to make it bigger is the team behind it, not one of you

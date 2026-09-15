@@ -34,6 +34,38 @@ hash until it's replaced (or deliberately deleted). The two people
 portraits are also still flagged but belong to `people.md`, not this
 block.
 
+## The written record, added
+
+`index.astro` promised "a written record of five real interactions" and
+nothing on the site produced one. `crit-participation` said "nothing written
+ahead of time — the report and reflection are spoken, live" and `legacy`
+said "no written report is due separately", so the home page was selling an
+artefact the course didn't ask for. A full `content-review` pass flagged it.
+
+**Resolved by adding the artefact rather than deleting the promise**: after
+each hallway week you write a few lines about it, unpolished, while it's
+still close. Five of those are the written record, and they're what the
+Legacy account gets built out of.
+
+Three reasons it slots in without breaking anything:
+
+- `crit-participation`'s existing qualifier is "nothing written *ahead of
+  time*" — the objection was to rehearsal, not to writing. Notes written
+  afterwards were always compatible.
+- Nothing is handed in, so `legacy`'s "no written report is due separately"
+  and Policies' "no such thing as a late submission" both stay true.
+- Policies' integrity rule already read "your reflections have to be yours:
+  **written** or spoken by you" — it had anticipated written reflection all
+  along.
+
+And it matches CLAUDE.md, which says reflection is "written close to the
+moment, not polished after the fact". The harness assumed a written
+reflection the site had never actually asked for.
+
+Deliberately unassessed and with no `spec:` line: the clip is required
+because Legacy needs it, the notes are the student's own. The incentive is
+that Legacy is built from them.
+
 ## Open questions
 
 None blocking. Assignment brief doesn't mandate real-world dates (only

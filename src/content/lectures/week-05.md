@@ -39,12 +39,9 @@ of experiment with clapping and shouting and separated the two reasons a
 group underperforms — some of the loss is bad coordination, and some of it
 is simply effort. The second kind is the one you can do something about,
 because it shrinks when each person's output is measurable. It was never
-laziness, it was being un-measurable. That has an awkward implication for this Crossing,
-and the lecture says it out loud —
-[Midsemester Checkpoint](/assessments/midsem-checkpoint/) deliberately
-marks the stall as one thing rather than five slices, which is exactly the
-condition the effect needs. So the accountability has to come from inside
-the team: distinct jobs, named out loud, before the table goes up.
+laziness, it was being un-measurable. So the accountability has to come
+from inside the team: distinct jobs, named out loud, before the table goes
+up.
 
 The half closes on the test the whole Crossing turns on. If the thing stops
 being a thing the moment nobody is standing next to it, you built a
