@@ -9,6 +9,8 @@ import { courseMeta } from "../course-config";
 import DeckPeople from "../components/DeckPeople.astro";
 import DeckAssessments from "../components/DeckAssessments.astro";
 import DeckPresenter from "../components/DeckPresenter.astro";
+import FigCrossing from "../components/FigCrossing.astro";
+import FigForecast from "../components/FigForecast.astro";
 
 {/* _class: title */}
 
@@ -95,12 +97,10 @@ spoken, in the room, once.
 
 ## A Crossing is two weeks
 
-**Out.** You go into the hallway and do the thing.
+<FigCrossing />
 
-**Back.** You stand up in front of the group and say what it got you.
-
-Both halves are the Crossing. Five of them run like that. The sixth is
-where you account for the other five — all [six Crossings](/sessions/).
+Both halves are the Crossing — and the sixth is where you account for the
+other five. All [six Crossings](/sessions/).
 
 <DeckPresenter of="george-curious" />
 
@@ -202,14 +202,7 @@ Wants a full-bleed background (a bus or train seat beside a stranger) and
 
 ## Nearly everyone gets this wrong
 
-Epley and Schroeder, 2014: commuters split three ways — **talk to a
-stranger**, sit in solitude, or ride as normal.
-
-Riders predicted the conversation would be the worst of the three.
-
-It was the best of the three.
-
-Nine experiments. Trains and buses. Same answer every time.
+<FigForecast />
 
 <DeckPresenter of="haskell-byte" />
 

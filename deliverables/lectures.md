@@ -230,41 +230,52 @@ or accept eyeball-only verification at the two marking viewports.
 
 ## Imagery
 
-Needed, in priority order:
+**Decided: no full-bleed backgrounds, and no sourced photography.** Three
+drawn figures instead, on the slides where structure is the content.
 
-1. **Week 1 slide 1** — full-bleed cold-open background: the bus/train seat
-   beside a stranger, or the edge of a room where everyone already knows
-   each other. **To generate.**
-2. **Week 3 slide 1** — full-bleed: something changing hands, no money in
-   frame. **To generate.**
-3. **Week 1 slide 18** — the edge of the room. Best spare is
-   `src/assets/images/home-hero-slopuni.jpg`, copied to `src/decks/assets/`
-   because deck image paths must be deck-relative. **No generation needed**,
-   with one caveat: it is a near-twin of `home-hero-slopuni-revised.jpg`,
-   which is the home page's current hero, so it may read as a repeat.
+### Why not sourced photos
 
-   Reviewed all four home-hero files for this. `home-hero-colourful.jpg` is
-   off-palette for a dark deck (blues and teals against the deck's gold);
-   `home-hero-themed.jpg` is the same illustration gold-washed, but busy in
-   the mid-tones and letterboxed at 1024×430; `home-hero-slopuni.jpg` is the
-   bold gold/black/cream woodcut and the only one that matches the deck
-   surface.
+Looked properly before ruling it out. Three reasons:
 
-   None of the three substitutes for the two cold opens below — they are all
-   one idea (a busy campus hallway), already spent on the home page.
+- **Style.** The identity is illustrated gold/black/cream halftone — the
+  portraits, the home heroes. A photograph reads as pasted onto a dark gold
+  deck whatever its provenance.
+- **The best-fitting subject is one to leave alone.** Mauss's argument rests
+  on the potlatch, and Commons has a public-domain 1910 Alert Bay photograph
+  — catalogued as a tourist postcard, taken while the potlatch was
+  criminalised in Canada. Using it to illustrate undergraduates swapping
+  badges makes a serious thing decorative.
+- **What's left is decorative.** A portrait of Mauss, or the CC BY-SA photo
+  of a book he signed for Georges Dumas. Neither carries an argument the
+  slide doesn't already make, and BY-SA's ShareAlike sits awkwardly beside
+  the site's CC-BY-NC-SA-4.0.
 
-   Note for any new deck artwork: all existing images are 1024px wide, and a
-   deck canvas is 1280×720, so a full-bleed background upscales about 25%.
-   Ask for 1280×720 or larger, 16:9.
-4. **Week 1 slide 6** — the five portraits, already in `src/content/people/`,
-   reached via `DeckPeople.astro`. **No generation needed.**
-5. **Week 3 slide 7** — optional four-up of campus trade objects.
-6. **Week 1 slide 2** — optional: Epley & Schroeder's predicted-vs-actual
-   comparison, redrawn small and inline rather than hotlinked. Open question
-   whether the deck wants a chart at all.
+### The three figures
 
-Deck backgrounds go in `src/decks/assets/` and are referenced as
-`![bg](./assets/name.avif)`.
+Inline SVG components, coloured from the `--at-*` tokens the deck already
+uses, sharp at any projection size, no attribution burden.
+
+| Component | Slide | What it carries |
+| --------- | ----- | --------------- |
+| `FigCrossing.astro` | Week 1, slide 7 | Twelve weeks as six Crossings — an outlined "out" week paired with a filled "back" week, the sixth pair broken because Crossing 6 has no fieldwork. Says the structure, the count and the exception in one graphic. |
+| `FigForecast.astro` | Week 1, slide 13 | Epley & Schroeder's reversal: one line from *predicted worst* to *actually best*. |
+| `FigSpine.astro` | Week 3, slide 15 | The four-beat story spine, with "one day" filled because that's the beat the slide says a dull trade is missing. |
+
+Each figure let its slide's prose shrink — the reversal, the five-and-one
+structure and the spine were all being spelled out in sentences that the
+figure now carries, which also buys back vertical space on three of the
+slides flagged as tight.
+
+`FigForecast` deliberately plots **no magnitudes and ranks no other
+condition.** The release publishes no effect sizes, so a three-way chart
+would be inventing data; the figure states only the reversal, and captions
+itself to say so.
+
+### Still unresolved
+
+The two cold-open slides (week 1 slide 12, week 3 slide 11) stay flat gold
+`impact` slides. They read as deliberate rather than unfinished, and their
+`comment` fences still describe the artwork if that decision is revisited.
 
 ## Cross-block issue: the clip is barely on the site
 

@@ -1,0 +1,94 @@
+---
+// Pixar's story spine as the four beats it actually is, with "one day"
+// marked because that's the beat the slide says a dull trade is missing.
+const beats = [
+  { top: "Once upon", bottom: "a time…" },
+  { top: "Every day…", bottom: "" },
+  { top: "One day…", bottom: "" },
+  { top: "Because", bottom: "of that…" },
+];
+const STEP = 260;
+const W = 220;
+---
+
+<svg
+  class="fig fig-spine"
+  viewBox="0 0 1000 150"
+  role="img"
+  aria-label="The four-beat story spine: once upon a time, every day, one day, because of that. The third beat, one day, is the turn."
+>
+  {
+    beats.map((beat, i) => {
+      const x = i * STEP;
+      const turn = i === 2;
+      return (
+        <>
+          <rect class={turn ? "box turn" : "box"} x={x} y="12" width={W} height="86" rx="8" />
+          {beat.bottom ? (
+            <>
+              <text class={turn ? "beat on" : "beat"} x={x + W / 2} y="48" text-anchor="middle">{beat.top}</text>
+              <text class={turn ? "beat on" : "beat"} x={x + W / 2} y="78" text-anchor="middle">{beat.bottom}</text>
+            </>
+          ) : (
+            <text class={turn ? "beat on" : "beat"} x={x + W / 2} y="63" text-anchor="middle">{beat.top}</text>
+          )}
+          {i < 3 && (
+            <path class="arrow" d={`M ${x + W + 8} 55 L ${x + STEP - 10} 55`} marker-end="url(#spine-tip)" />
+          )}
+        </>
+      );
+    })
+  }
+
+  <defs>
+    <marker id="spine-tip" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--at-primary)" />
+    </marker>
+  </defs>
+
+  <text class="note" x="500" y="140" text-anchor="middle">
+    No “one day” in your trade means there isn’t a trade yet.
+  </text>
+</svg>
+
+<style>
+  .fig {
+    width: 100%;
+    height: auto;
+    margin-block: 1.25rem;
+    font-family: inherit;
+  }
+
+  .box {
+    fill: none;
+    stroke: var(--at-primary);
+    stroke-width: 2.5;
+    opacity: 0.55;
+  }
+
+  .box.turn {
+    fill: var(--at-primary);
+    stroke: none;
+    opacity: 1;
+  }
+
+  .beat {
+    fill: var(--at-light-grey);
+    font-size: 23px;
+  }
+
+  .beat.on {
+    fill: var(--at-on-primary);
+    font-weight: 600;
+  }
+
+  .arrow {
+    stroke: var(--at-primary);
+    stroke-width: 2.5;
+  }
+
+  .note {
+    fill: var(--at-text-secondary);
+    font-size: 16px;
+  }
+</style>

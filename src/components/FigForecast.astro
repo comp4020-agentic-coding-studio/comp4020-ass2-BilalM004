@@ -1,0 +1,112 @@
+---
+// Epley & Schroeder's reversal, and only the reversal: riders put talking to
+// a stranger last and it came first. The release publishes no effect sizes,
+// so the figure deliberately plots no magnitudes and ranks no other
+// condition --- drawing a full three-way chart would be inventing data the
+// source doesn't have.
+//
+// Captions are HTML under the SVG rather than <text> inside it. A
+// role="img" element makes its children presentational, so a provenance
+// note written into the SVG would be invisible to a screen reader --- and
+// provenance is exactly the thing that shouldn't depend on being able to
+// see the picture.
+---
+
+<figure class="fig-forecast">
+  <svg
+    class="fig"
+    viewBox="0 0 900 225"
+    role="img"
+    aria-label="Riders predicted that talking to a stranger would be the worst of the three commutes. It was the best."
+  >
+    <text class="head" x="180" y="26" text-anchor="middle">what riders predicted</text>
+    <text class="head" x="720" y="26" text-anchor="middle">what actually happened</text>
+
+    <line class="axis" x1="180" y1="52" x2="180" y2="212" />
+    <line class="axis" x1="720" y1="52" x2="720" y2="212" />
+
+    <text class="rank" x="150" y="66" text-anchor="end">best</text>
+    <text class="rank" x="150" y="206" text-anchor="end">worst</text>
+    <text class="rank" x="750" y="66">best</text>
+    <text class="rank" x="750" y="206">worst</text>
+
+    <line class="flip" x1="180" y1="200" x2="720" y2="60" />
+    <circle class="dot" cx="180" cy="200" r="11" />
+    <circle class="dot" cx="720" cy="60" r="11" />
+
+    <text class="callout" x="450" y="168" text-anchor="middle">talking to a stranger</text>
+  </svg>
+
+  <figcaption>
+    <span
+      >Epley &amp; Schroeder (2014) — nine experiments, commuter trains and
+      buses. Three conditions: talk to a stranger, sit in solitude, ride as
+      normal. Same answer every time.</span
+    >
+    <span class="provenance"
+      >Diagram made for this lecture, not reproduced from the paper —
+      generated with AI.</span
+    >
+  </figcaption>
+</figure>
+
+<style>
+  .fig-forecast {
+    margin: 0;
+  }
+
+  .fig {
+    width: 100%;
+    height: auto;
+    margin-block: 0.5rem;
+    font-family: inherit;
+  }
+
+  .head {
+    fill: var(--at-light-grey);
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .axis {
+    stroke: var(--at-divider);
+    stroke-width: 2;
+  }
+
+  .rank {
+    fill: var(--at-text-secondary);
+    font-size: 17px;
+    opacity: 0.8;
+  }
+
+  .flip {
+    stroke: var(--at-primary);
+    stroke-width: 5;
+    stroke-linecap: round;
+  }
+
+  .dot {
+    fill: var(--at-primary);
+  }
+
+  .callout {
+    fill: var(--at-primary);
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    color: var(--at-text-secondary);
+  }
+
+  .provenance {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    font-style: italic;
+  }
+</style>
