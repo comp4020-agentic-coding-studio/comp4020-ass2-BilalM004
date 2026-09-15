@@ -212,22 +212,22 @@ First thing to check when writing. Fallback if it doesn't hold: a
 `DeckLink.astro` using the theme's `withBase`, exactly as
 `src/pages/lectures/[slug].astro` already does for `slides`.
 
-### QR codes point at the in-world canonical
+### QR codes point at the live deployed session page
 
-**Decided.** Slides 20 and 13 each carry a QR pointing at
-`https://courses.slop.university/SLOP1744/...`. `![qr](url)` is build-time
-markdown, so no MDX expression can be interpolated into it and the URL must
-be absolute and literal — which makes this a choice between two hardcodings.
-The in-world canonical is already the single source as `canonicalUrl` in
-`astro.config.ts`, survives the repo moving, and is the URL a Slop University
-lecture would actually project. It does not resolve for a real scanner, which
-is the cost; the rejected alternative resolves but pins into the deck the
-thing `scripts/pages-base.ts` exists to derive.
+**Revised.** Every Crossing-week deck carries a QR pointing at
+`https://comp4020-agentic-coding-studio.github.io/comp4020-ass2-BilalM004/sessions/<slug>/`.
+`![qr](url)` is build-time markdown, so no MDX expression can be interpolated
+into it and the URL must be absolute and literal — the original choice here
+was the in-world canonical (`courses.slop.university/SLOP1744/...`), which
+reads truer to Slop University but never resolves when actually scanned.
+Reversed once that got tested against a real device: a QR that doesn't
+resolve isn't worth projecting, so it now hardcodes the same repo/base pair
+`scripts/pages-base.ts` derives at build time, accepting that the deck breaks
+if the repo is ever renamed or moved.
 
-The QR is the in-world affordance and the markdown links are the
-functional ones: a marker reads the deck in Chrome, where a link works and a
-QR is decoration. Every QR gets a plain link beside it so a browser reader
-is never stranded.
+Every QR still gets a plain, base-relative link beside it (e.g.
+`[Say Something →](/sessions/01-say-something/)`), so a browser reader is
+never stranded even if the QR's hardcoded host goes stale.
 
 ### Speaker notes
 
