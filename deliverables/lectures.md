@@ -20,19 +20,35 @@ other content references it).
 
 Supersedes the earlier six-lecture scope (weeks 1/3/5/7/9/11, one deck).
 
-### Six nominal, two published
+### All six, written
 
 The course runs a fortnightly lecture — one per Crossing, at the week its
-fieldwork opens, so six across the semester. This deliverable writes and
-publishes the first two. The other four aren't stubbed: CLAUDE.md forbids a
-page that exists only to satisfy a schema, and `published: false` would still
-mean committing four files with nothing real in them.
+fieldwork opens. All six now exist with a deck each: weeks 1, 3, 5, 7, 9
+and 11.
 
-So the lectures index says what the cadence is and that weeks 1 and 3 are the
-ones with pages so far — which is also just what a course site mid-semester
-honestly looks like. Its current copy is template text about the platform
-("Every lecture the course claims to run gets a dated page…") rather than
-about this course, so it needs rewriting regardless.
+Weeks 5, 7, 9 and 11 were written by four parallel agents, one per lecture,
+each briefed to week 3's deck as the canonical structure. Each did its own
+source research and URL verification.
+
+| Week | Crossing | Presenters | Slides |
+| ---- | -------- | ---------- | ------ |
+| 1 | 1 — Starting a Conversation | George Curious + Haskell Byte | 23 |
+| 3 | 2 — The Exchange | George Curious + Yu Tobe | 18 |
+| 5 | 3 — Presence at Scale | George Curious alone | 18 |
+| 7 | 4 — Risk & Rejection | George Curious + Dora De Exploré | 18 |
+| 9 | 5 — Building With Others | George Curious + Moana Liza | 18 |
+| 11 | 6 — Legacy | George Curious alone | 18 |
+
+### The solo-presenter problem
+
+Crossings 3 and 6 have no separate tutor: George Curious runs both *and* is
+the convenor, so "convenor plus that Crossing's tutor" is one person for
+weeks 5 and 11. Rather than invent teaching assignments the People pages
+don't claim, those two decks keep the two-part shape but their dividers name
+**the half** ("The idea" / "The doing") instead of a person, with one
+presenter tag throughout. `lectures/index.mdx` states the exception once:
+"For Crossings 3 and 6 those are the same person, so the halves are marked
+out by what they cover rather than by who is standing there."
 
 ### Division of labour between the two
 
