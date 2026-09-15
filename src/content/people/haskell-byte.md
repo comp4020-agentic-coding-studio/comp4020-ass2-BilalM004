@@ -10,6 +10,11 @@ contact:
   Tue 2-3pm · CS building · 15-min slots, book by email · Crossing 1
   questions first, then George Curious
 photo: ./haskell-byte.avif
+heroImage: ../../assets/images/haskell-byte-hero.jpg
+heroImageAlt:
+  An illustrated man in glasses gestures toward whiteboards of code, trees
+  and network diagrams, with server racks and an adjacency matrix behind
+  him, in gold and black on a cream background.
 photoAlt:
   A halftone-shaded illustrated portrait of a man in glasses and a tweed
   jacket, facing the viewer, in gold and black on a cream background.

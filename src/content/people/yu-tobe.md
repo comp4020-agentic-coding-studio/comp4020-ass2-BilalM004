@@ -10,6 +10,11 @@ contact:
   Thu 1-2pm · wherever the light's good that day · informal drop-in, call
   or email · Crossing 2 questions first, then George Curious
 photo: ./yu-tobe.avif
+heroImage: ../../assets/images/yu-tobe-hero.jpg
+heroImageAlt:
+  An illustrated woman with a lapel microphone presents at a podium in
+  front of an audience, gesturing toward a screen of network diagrams and
+  trend charts, in gold and black on a cream background.
 photoAlt:
   A halftone-shaded illustrated portrait of a smiling woman with a lapel
   microphone, in a light blazer, in gold and black on a cream background.

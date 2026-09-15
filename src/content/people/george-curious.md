@@ -11,6 +11,11 @@ contact:
   Fri 1-2pm · office, by appointment · email ahead · course-wide matters
   and both presentations, otherwise ask your Crossing's tutor first
 photo: ./george-curious.avif
+heroImage: ../../assets/images/george-curious-hero.jpg
+heroImageAlt:
+  An illustrated older bearded man sits thoughtfully at a desk in a study
+  lined with bookshelves, a quill and a small bust nearby, in gold and
+  black on a cream background.
 photoAlt:
   A halftone-shaded illustrated portrait of an older bearded man in
   glasses, resting his chin on his hand, in gold and black on a cream

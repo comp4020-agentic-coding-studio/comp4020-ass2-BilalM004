@@ -25,6 +25,8 @@ const roleLabel = person.data.role ? roleLabels[person.data.role] : undefined;
 // so narrow the alt at the rendering boundary as well.
 const rawPhotoAlt = (person.data as { photoAlt?: unknown }).photoAlt;
 const photoAlt = typeof rawPhotoAlt === "string" ? rawPhotoAlt : "";
+const rawHeroImageAlt = (person.data as { heroImageAlt?: unknown }).heroImageAlt;
+const heroImageAlt = typeof rawHeroImageAlt === "string" ? rawHeroImageAlt : photoAlt;
 // Every page owes a description --- it is what a search result and a shared
 // link show underneath the title.
 const description = person.data.description;
@@ -33,8 +35,8 @@ const description = person.data.description;
 <ContentLayout
   title={person.data.title}
   description={description}
-  heroImage={person.data.photo ?? undefined}
-  heroImageAlt={photoAlt}
+  heroImage={person.data.heroImage ?? person.data.photo ?? undefined}
+  heroImageAlt={heroImageAlt}
   {...siteConfig}
 >
   <dl>

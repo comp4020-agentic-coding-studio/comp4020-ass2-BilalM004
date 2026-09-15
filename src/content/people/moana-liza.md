@@ -10,6 +10,11 @@ contact:
   Wed 3-4pm · the Maker Space · email ahead so she can clear a bench ·
   Crossing 5 questions first, then George Curious
 photo: ./moana-liza.avif
+heroImage: ../../assets/images/moana-liza-hero.jpg
+heroImageAlt:
+  An illustrated woman in a paint-splattered apron paints a network
+  diagram onto a canvas in her studio, in gold and black on a cream
+  background.
 photoAlt:
   A halftone-shaded illustrated portrait of a woman resting her chin on
   her hand, wearing a paint-splattered apron, in gold and black on a

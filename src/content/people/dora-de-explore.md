@@ -10,6 +10,11 @@ contact:
   Mon 11am-12pm · the courtyard, weather permitting · call or email ·
   Crossing 4 questions first, then George Curious
 photo: ./dora-de-explore.avif
+heroImage: ../../assets/images/dora-de-explore-hero.jpg
+heroImageAlt:
+  An illustrated woman in a field vest holds a trekking pole and a map,
+  standing before mountains, a topographic chart and an altitude gauge, in
+  gold and black on a cream background.
 photoAlt:
   A halftone-shaded illustrated portrait of a woman in a canvas field
   vest with a compass badge, facing the viewer, in gold and black on a
